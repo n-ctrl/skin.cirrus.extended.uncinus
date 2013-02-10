@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="skin.cirrus.extended.uncinus" name="Cirrus Extended Uncinus" version="3.0.39" provider-name="YoHan">
+  <requires>
+	<import addon="xbmc.gui" version="4.0.0"/>
+	<import addon="service.skin.widgets" version="0.0.2"/>
+	<import addon="script.artistslideshow" version="1.4.6"/>
+	<import addon="script.simpleplaylists" version="1.1.0"/>
+  </requires>
+  <extension point="xbmc.gui.skin" defaultresolution="720p" defaultresolutionwide="720p" defaultthemename="textures.xbt" effectslowdown="0.75" debugging="false">
+      <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+  </extension> 
+  <extension point="xbmc.addon.metadata">
+  <summary lang="en">mod based on Cirrus Extended v3</summary> 
+  <description lang="en">mod based on cirrus</description>
+  <disclaimer lang="en">no official skin use at your own risk.</disclaimer>
+  <platform>all</platform>
+  <res width="1920" height="1080" aspect="16:9" default="true" folder="720p" /> 
+  </extension>
+</addon>
