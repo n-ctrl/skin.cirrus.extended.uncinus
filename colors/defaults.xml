@@ -4,8 +4,8 @@
 	<color name="grey2">88FFFFFF</color>
 	<color name="grey3">33FFFFFF</color>
 	<color name="black">FF000000</color>
-	<color name="blue">FFEB9E17</color>
-	<color name="accent">FFFFA500</color>
-	<color name="selected">FFEB9E17</color>
+	<color name="blue">FF006699</color>
+	<color name="accent">FF0077C6</color>
+	<color name="selected">FF7993B0</color>
 	<color name="dialogheader">DDced8da</color>
 </colors>
