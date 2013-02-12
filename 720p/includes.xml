@@ -441,24 +441,73 @@
 	</include>
 	
   
-   <include name="CommonPageCount">
 <!-- TIME AND STUFF FOR WHATEVER IS PLAYING (UNDER SECTION TITLE) -->
-<!-- PAGE COUNT STUFF UPPER RIGHT CORNER -->
+<!-- PAGE COUNT STUFF UPPER RIGHT CORNER -->  
+  <include name="CommonPageCount">
+  <control type="group">
+  		<include>VisibleFadeEffect</include>
+		<animation effect="slide" end="-1300,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
+		<animation effect="slide" start="-1300,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+  <control type="image">
+    <description>Topbar gradient</description>
+    <posx>0</posx>
+    <posy>0</posy>>
+    <width>1920</width>
+    <height>57</height>
+    <texture>logo_tagline_gradient.png</texture>
+ </control>
+
+  <control type="grouplist">
+    <posx>315r</posx>
+    <posy>10</posy>
+    <width>300</width>
+    <height>60</height>
+    <align>right</align>
+    <aligny>center</aligny>
+    <itemgap>10</itemgap>
+    <scroll>false</scroll>
+    <orientation>horizontal</orientation>  
+    <include>Window_OpenClose_Animation</include> 
+    <visible>!Skin.HasSetting(nopagecount)</visible>	 
+    <control type="image">
+      <description>Item Count Icon</description>
+      <aligny>center</aligny>
+      <width>24</width>
+      <height>34</height>
+      <aspectratio>keep</aspectratio>
+      <colordiffuse>FF7993B0</colordiffuse>
+      <texture>items.png</texture>
+    </control>
+    <control type="label"> 
+      <description>Item Count label</description>
+      <description>Item Count Icon</description>
+      <aligny>center</aligny>       
+      <height>34</height>
+      <width min="15" max="1920">auto</width>
+      <font>cirrus_22</font>
+      <textcolor>grey2</textcolor>
+      <label>$INFO[Container.NumItems]  </label>            <!-- hier "speelfilms" of dergelijke nog achter aantal zetten -->
+    </control>
+    <control type="image">
+    <description>Pages Count Icon</description>
+      <width>26</width>
+      <height>34</height>
+      <aspectratio>keep</aspectratio>
+      <colordiffuse>FF7993B0</colordiffuse>
+      <texture>pages.png</texture>
+    </control>    
     <control type="label">
       <description>Page Count Label</description>
-      <posx>25r</posx>
-      <posy>0</posy>
-      <width>500</width>
-      <height>50</height>
-      <font>cirrus_24</font>
-      <textcolor>white</textcolor>
+      <height>34</height>
+      <aligny>center</aligny>  
+      <width min="15" max="1920">auto</width>
+      <font>cirrus_22</font>
+      <textcolor>grey2</textcolor>
       <scroll>false</scroll>
-      <align>right</align>
-      <aligny>center</aligny>
-      <label>[COLOR=white]$INFO[Container.NumItems][/COLOR] $LOCALIZE[31025] - $LOCALIZE[31024] [COLOR=white]$INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR]</label>
-      <include>Window_OpenClose_Animation</include>   
-      <visible>!Skin.HasSetting(nopagecount)</visible>	  
+      <label>$INFO[Container.CurrentPage]$INFO[Container.NumPages,/]       </label>
     </control>
+  </control>    
+  </control> 
   </include>
   <include name="SmallMusicInfo">
 <!--    <control type="image">

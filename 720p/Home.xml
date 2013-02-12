@@ -1255,7 +1255,7 @@
 	  <width>1480</width>
 	  <height>80</height>
 	  <texture>horzmenuback.png</texture>
-	  <visible>Skin.HasSetting(themelighthorz)</visible>
+	  <visible>!Skin.HasSetting(themelighthorz)</visible>
 	  <visible>!Skin.HasSetting(cleanHome) | !Skin.HasSetting(homeNoClock)</visible>
 	  <visible>!Skin.HasSetting(originalcirrusclock)</visible>
 	</control> -->
