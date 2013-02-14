@@ -547,7 +547,6 @@
               <posx>120</posx>
               <width>533</width>
               <height>25</height>
-              
               <posy>60</posy>
               <label>[COLOR=accent]$LOCALIZE[562]:[/COLOR] $INFO[Container(8000).ListItem.Property(Year)]</label>
               <font>cirrus_20</font>
@@ -557,7 +556,6 @@
               <posx>120</posx>
               <width>533</width>
               <height>25</height>
-              
               <posy>85</posy>
               <label>[COLOR=accent]$LOCALIZE[368]:[/COLOR] $INFO[Container(8000).ListItem.Property(Rating)]</label>
               <font>cirrus_20</font>
