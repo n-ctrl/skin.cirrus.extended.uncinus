@@ -16,7 +16,7 @@
         <visible>Control.HasFocus(8000)</visible>
         <animation effect="slide" time="0" tween="cubic" easing="inout" end="0,-150" condition="Skin.HasSetting(lowermainmenu) | Skin.HasSetting(Lockhomemenulow)">Conditional</animation>
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoMoviesButton) + Control.HasFocus(8000)">Conditional</animation>
-      </control>
+     </control>
 	   <control type="image">
         <description>media info background image</description>
         <posx>0</posx>
@@ -51,24 +51,24 @@
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoMoviesButton) + Control.HasFocus(8000)">Conditional</animation>
       </control>  
 	   <control type="image">
-              <posx>200</posx>
-              <posy>540</posy>
-              <width>1</width>
-              <height>240</height>
-              <aspectratio>stretch</aspectratio>
-              <texture>separator_vertical.png</texture>
-             <visible>Control.HasFocus(8000)</visible>
+        <posx>200</posx>
+        <posy>540</posy>
+        <width>1</width>
+        <height>240</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>separator_vertical.png</texture>
+        <visible>Control.HasFocus(8000)</visible>
         <animation effect="slide" time="0" tween="cubic" easing="inout" end="0,-150" condition="Skin.HasSetting(lowermainmenu) | Skin.HasSetting(Lockhomemenulow)">Conditional</animation>
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoMoviesButton) + Control.HasFocus(8000)">Conditional</animation>
       </control>  
 	   <control type="image">
-              <posx>985</posx>
-              <posy>540</posy>
-              <width>1</width>
-              <height>240</height>
-              <aspectratio>stretch</aspectratio>
-              <texture>separator_vertical.png</texture>
-             <visible>Control.HasFocus(8000)</visible>
+        <posx>985</posx>
+        <posy>540</posy>
+        <width>1</width>
+        <height>240</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>separator_vertical.png</texture>
+        <visible>Control.HasFocus(8000)</visible>
         <animation effect="slide" time="0" tween="cubic" easing="inout" end="0,-150" condition="Skin.HasSetting(lowermainmenu) | Skin.HasSetting(Lockhomemenulow)">Conditional</animation>
         <animation effect="slide" start="0,0" end="0,-470" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoMoviesButton) + Control.HasFocus(8000)">Conditional</animation>
       </control>  
@@ -85,17 +85,17 @@
         <animation effect="slide" start="0,0" end="0,-400" time="400" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(Lockhomemenulow) + !Skin.HasSetting(HomeMenuNoMoviesButton)">Conditional</animation>
         <animation effect="slide" start="0,0" end="0,-420" time="400" tween="cubic" easing="inout" condition="[Skin.HasSetting(lowermainmenu) | Skin.HasSetting(Lockhomemenulow)] + !Skin.HasSetting(HomeMenuNoMoviesButton)">Conditional</animation>
         <control type="group">
-          <description>Recently Added Widget Movies</description>
-          <animation effect="slide" start="400,0" end="0,0" easing="inout" tween="cubic" time="500" delay="100">VisibleChange</animation>
-          <visible>!Control.HasFocus(8000)</visible>
+        <description>Recently Added Widget Movies</description>
+        <animation effect="slide" start="400,0" end="0,0" easing="inout" tween="cubic" time="500" delay="100">VisibleChange</animation>
+        <visible>!Control.HasFocus(8000)</visible>
 		  <!-- Main Picture -->
 		   <control type="image">
 		   <posx>0</posx>
 		   <posy>28</posy>
-           <width>240</width>
-           <height>230</height>
-           <texture background="true">ContentPanelRecentlyaddedvertical.png</texture>
-           <aspectratio>stretch</aspectratio>
+       <width>240</width>
+       <height>230</height>
+       <texture background="true">ContentPanelRecentlyaddedvertical.png</texture>
+       <aspectratio>stretch</aspectratio>
 		   <visible>!Skin.HasSetting(themelighthorz)</visible>
 		   <visible>Skin.HasSetting(nomoviewidget)</visible>
 		   <visible>!Skin.HasSetting(watchlistmovieswidget)</visible>
@@ -103,10 +103,10 @@
 	  <control type="image">
 		   <posx>0</posx>
 		   <posy>28</posy>
-           <width>240</width>
-           <height>230</height>
-           <texture background="true">ContentPanelRecentlyaddedvertical.png</texture>
-           <aspectratio>stretch</aspectratio>
+       <width>240</width>
+       <height>230</height>
+       <texture background="true">ContentPanelRecentlyaddedvertical.png</texture>
+       <aspectratio>stretch</aspectratio>
 		   <visible>!Skin.HasSetting(themelighthorz)</visible>
 		   <visible>!Skin.HasSetting(nomoviewidget)</visible>
 		    <visible>Skin.HasSetting(watchlistmovieswidget)</visible>
@@ -114,9 +114,9 @@
 	  <control type="image">
 		   <posx>0</posx>
 		   <posy>28</posy>
-           <width>240</width>
-           <height>230</height>
-           <texture>nowplaying_shadow5.png</texture>
+       <width>240</width>
+       <height>230</height>
+       <texture>nowplaying_shadow5.png</texture>
 		   <visible>Skin.HasSetting(themelighthorz)</visible>
 		   <visible>Skin.HasSetting(nomoviewidget)</visible>
 		   <visible>!Skin.HasSetting(watchlistmovieswidget)</visible>
@@ -124,9 +124,9 @@
 	   <control type="image">
 		   <posx>0</posx>
 		   <posy>28</posy>
-           <width>240</width>
-           <height>230</height>
-           <texture>nowplaying_shadow5.png</texture>
+       <width>240</width>
+       <height>230</height>
+       <texture>nowplaying_shadow5.png</texture>
 		   <visible>Skin.HasSetting(themelighthorz)</visible>
 		   <visible>!Skin.HasSetting(nomoviewidget)</visible>
 		   <visible>Skin.HasSetting(watchlistmovieswidget)</visible>
@@ -134,9 +134,9 @@
 	  <control type="image">
 		   <posx>0</posx>
 		   <posy>28</posy>
-           <width>240</width>
-           <height>230</height>
-           <texture flipy="true">nowplaying_shadow5.png</texture>
+       <width>240</width>
+       <height>230</height>
+       <texture flipy="true">nowplaying_shadow5.png</texture>
 		   <visible>Skin.HasSetting(themelighthorz)</visible>
 		   <visible>Skin.HasSetting(nomoviewidget)</visible>
 		   <visible>!Skin.HasSetting(watchlistmovieswidget)</visible>
@@ -144,74 +144,74 @@
 	  <control type="image">
 		   <posx>0</posx>
 		   <posy>28</posy>
-           <width>240</width>
-           <height>230</height>
-           <texture flipy="true">nowplaying_shadow5.png</texture>
+       <width>240</width>
+       <height>230</height>
+       <texture flipy="true">nowplaying_shadow5.png</texture>
 		   <visible>Skin.HasSetting(themelighthorz)</visible>
 		   <visible>!Skin.HasSetting(nomoviewidget)</visible>
 		   <visible>Skin.HasSetting(watchlistmovieswidget)</visible>
 	  </control>
-	   <!-- Recently Added Label -->
-          <control type="label">
-            <description>RECENTLY ADDED</description>
-            <posx>10</posx>
-            <posy>25</posy>
-            <width>220</width>
-            <height>40</height>
-            <align>center</align>
-            <aligny>center</aligny>
-            <label>$LOCALIZE[31328]</label>
-              <font>cirrus_20</font>
-            <textcolor>c0FFFFFF</textcolor>
-            <shadowcolor>black</shadowcolor>
-            <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-            <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-            <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-            <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-			<visible>!Skin.HasSetting(themelighthorz)</visible>
-			<visible>Skin.HasSetting(nomoviewidget)</visible>
-			<visible>!Skin.HasSetting(watchlistmovieswidget)</visible>
-          </control>
+   <!-- Recently Added Label -->
+    <control type="label">
+        <description>RECENTLY ADDED</description>
+        <posx>10</posx>
+        <posy>25</posy>
+        <width>220</width>
+        <height>40</height>
+        <align>center</align>
+        <aligny>center</aligny>
+        <label>$LOCALIZE[31328]</label>
+        <font>cirrus_20</font>
+        <textcolor>c0FFFFFF</textcolor>
+        <shadowcolor>black</shadowcolor>
+        <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
+        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+        <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
+        <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+  			<visible>!Skin.HasSetting(themelighthorz)</visible>
+  			<visible>Skin.HasSetting(nomoviewidget)</visible>
+  			<visible>!Skin.HasSetting(watchlistmovieswidget)</visible>
+    </control>
+	  <control type="label">
+          <description>WATCHLIST MOVIES WIDGET</description>
+          <posx>10</posx>
+          <posy>25</posy>
+          <width>220</width>
+          <height>40</height>
+          <align>center</align>
+          <aligny>center</aligny>
+          <label>41220</label>
+          <font>cirrus_20</font>
+          <textcolor>c0FFFFFF</textcolor>
+          <shadowcolor>black</shadowcolor>
+          <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
+          <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+          <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
+          <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+    			<visible>!Skin.HasSetting(themelighthorz)</visible>
+    			<visible>!Skin.HasSetting(nomoviewidget)</visible>
+    			<visible>Skin.HasSetting(watchlistmovieswidget)</visible>
+      </control>
 		  <control type="label">
-            <description>WATCHLIST MOVIES WIDGET</description>
-            <posx>10</posx>
-            <posy>25</posy>
-            <width>220</width>
-            <height>40</height>
-            <align>center</align>
-            <aligny>center</aligny>
-            <label>41220</label>
-            <font>cirrus_20</font>
-            <textcolor>c0FFFFFF</textcolor>
-            <shadowcolor>black</shadowcolor>
-            <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-            <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-            <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-            <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-			<visible>!Skin.HasSetting(themelighthorz)</visible>
-			<visible>!Skin.HasSetting(nomoviewidget)</visible>
-			<visible>Skin.HasSetting(watchlistmovieswidget)</visible>
-          </control>
-		  <control type="label">
-            <description>RECENTLY ADDED</description>
-            <posx>10</posx>
-            <posy>25</posy>
-            <width>220</width>
-            <height>40</height>
-            <align>center</align>
-            <aligny>center</aligny>
-            <label>$LOCALIZE[31328]</label>
-              <font>cirrus_20</font>
-            <textcolor>c0FFFFFF</textcolor>
-            <shadowcolor>black</shadowcolor>
-            <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
-            <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-            <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
-            <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-			<visible>Skin.HasSetting(themelighthorz)</visible>
-			<visible>Skin.HasSetting(nomoviewidget)</visible>
-			<visible>!Skin.HasSetting(watchlistmovieswidget)</visible>
-          </control>
+          <description>RECENTLY ADDED</description>
+          <posx>10</posx>
+          <posy>25</posy>
+          <width>220</width>
+          <height>40</height>
+          <align>center</align>
+          <aligny>center</aligny>
+          <label>$LOCALIZE[31328]</label>
+          <font>cirrus_20</font>
+          <textcolor>c0FFFFFF</textcolor>
+          <shadowcolor>black</shadowcolor>
+          <animation effect="fade" start="0" end="100" delay="1000" time="500">WindowOpen</animation>
+          <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+          <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
+          <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+    			<visible>Skin.HasSetting(themelighthorz)</visible>
+    			<visible>Skin.HasSetting(nomoviewidget)</visible>
+    			<visible>!Skin.HasSetting(watchlistmovieswidget)</visible>
+      </control>
 		  <control type="label">
             <description>WATCHLIST MOVIES WIDGET</description>
             <posx>10</posx>
@@ -335,8 +335,8 @@
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
             <animation effect="fade" start="0" end="100" delay="500" time="1200">Visible</animation>
             <animation effect="fade" start="100" end="0" time="500">Hidden</animation>
-			<visible>!Skin.HasSetting(nomoviewidget)</visible>
-			<visible>Skin.HasSetting(watchlistmovieswidget)</visible>
+      			<visible>!Skin.HasSetting(nomoviewidget)</visible>
+      			<visible>Skin.HasSetting(watchlistmovieswidget)</visible>
           </control>
 		  <!-- Movie Title -->
           <control type="label">
@@ -348,7 +348,7 @@
             <align>center</align>
             <aligny>center</aligny>
             <label>$INFO[Container(8000).ListItem.Label]</label>
-              <font>cirrus_20</font>
+            <font>cirrus_20</font>
             <textcolor>white</textcolor>
             <shadowcolor>black</shadowcolor>
             <scrollspeed>30</scrollspeed>
@@ -359,9 +359,9 @@
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
             <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
             <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-			<visible>!Skin.HasSetting(themelighthorz)</visible>
-			<visible>Skin.HasSetting(nomoviewidget)</visible>
-			<visible>!Skin.HasSetting(watchlistmovieswidget)</visible>
+      			<visible>!Skin.HasSetting(themelighthorz)</visible>
+      			<visible>Skin.HasSetting(nomoviewidget)</visible>
+      			<visible>!Skin.HasSetting(watchlistmovieswidget)</visible>
           </control>
 		  <!-- Movie Title -->
           <control type="label">
@@ -384,9 +384,9 @@
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
             <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
             <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-			<visible>!Skin.HasSetting(themelighthorz)</visible>
-			<visible>!Skin.HasSetting(nomoviewidget)</visible>
-			<visible>Skin.HasSetting(watchlistmovieswidget)</visible>
+      			<visible>!Skin.HasSetting(themelighthorz)</visible>
+      			<visible>!Skin.HasSetting(nomoviewidget)</visible>
+      			<visible>Skin.HasSetting(watchlistmovieswidget)</visible>
           </control>
 		   <control type="label">
             <description>Title label</description>
@@ -397,7 +397,7 @@
             <align>center</align>
             <aligny>center</aligny>
             <label>$INFO[Container(8000).ListItem.Label]</label>
-              <font>cirrus_20</font>
+            <font>cirrus_20</font>
             <textcolor>white</textcolor>
             <shadowcolor>black</shadowcolor>
             <scrollspeed>30</scrollspeed>
@@ -408,9 +408,9 @@
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
             <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
             <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-			<visible>Skin.HasSetting(themelighthorz)</visible>
-		    <visible>Skin.HasSetting(nomoviewidget)</visible>
-			<visible>!Skin.HasSetting(watchlistmovieswidget)</visible>
+      			<visible>Skin.HasSetting(themelighthorz)</visible>
+      		  <visible>Skin.HasSetting(nomoviewidget)</visible>
+      			<visible>!Skin.HasSetting(watchlistmovieswidget)</visible>
           </control>
 		   <control type="label">
             <description>Title label</description>
@@ -433,9 +433,9 @@
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
             <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
             <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-			<visible>Skin.HasSetting(themelighthorz)</visible>
-		    <visible>!Skin.HasSetting(nomoviewidget)</visible>
-			<visible>Skin.HasSetting(watchlistmovieswidget)</visible>
+      			<visible>Skin.HasSetting(themelighthorz)</visible>
+      		  <visible>!Skin.HasSetting(nomoviewidget)</visible>
+      			<visible>Skin.HasSetting(watchlistmovieswidget)</visible>
           </control>
         </control>
         <control type="group">
@@ -598,25 +598,25 @@
 			<fadetime>400</fadetime>
           </control>
          <control type="image">
-			<posx>70</posx>
+			      <posx>70</posx>
             <posy>31</posy>
             <description>Main Icon</description>
             <width>153</width>
             <height>230</height>
             <texture background="true" fallback="DefaultVideo.png">$INFO[Container(8000).ListItem.Icon]</texture>
-			<bordersize>8</bordersize>
+      			<bordersize>8</bordersize>
             <aspectratio scalediffuse="false">stretch</aspectratio>
-			<fadetime>400</fadetime>
-			<visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
+      			<fadetime>400</fadetime>
+      			<visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
           </control>
 		    <control type="image">
-			<posx>70</posx>
+			      <posx>70</posx>
             <posy>31</posy>
             <description>Watchlist Movies Thumb</description>
             <width>153</width>
             <height>230</height>
             <texture background="true" fallback="DefaultVideo.png">$INFO[Container(8000).ListItem.Thumb]</texture>
-			<bordersize>8</bordersize>
+			      <bordersize>8</bordersize>
             <aspectratio scalediffuse="false">stretch</aspectratio>
 			<fadetime>400</fadetime>
 			<visible>Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
@@ -644,6 +644,7 @@
             <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
             <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
           </control>
+
 		  	<!-- Movies 2.06 -->
           <control type="list" id="8000">
             <posx>0</posx>
@@ -657,10 +658,11 @@
             <viewtype label="535">list</viewtype>
             <pagecontrol>-</pagecontrol>
             <scrolltime tween="quadratic" easing="out">300</scrolltime>
-		    <focusposition>2</focusposition>
-			<movement>1</movement>
+    		    <focusposition>2</focusposition>
+      			<movement>1</movement>
             <itemlayout height="25" width="800">
               <control type="label">
+                <description>Movie list right</description>
                 <posx>20</posx>
                 <posy>26</posy>
                 <width>250</width>
@@ -670,20 +672,21 @@
                 <shadowcolor>black</shadowcolor>
                 <selectedcolor>selected</selectedcolor>
                 <align>left</align>
-				<aligny>center</aligny>
-				<scroll>false</scroll>
+        				<aligny>center</aligny>
+        				<scroll>false</scroll>
                 <label>$INFO[ListItem.Label]</label>
               </control>
             </itemlayout>
             <focusedlayout height="25" width="800">
-			<control type="image">
+			   <control type="image">
 						<posx>-10</posx>
 						<posy>27</posy>
 						<width>300</width>
 						<height>24</height>
-						 <texture flipx="true">recentlyaddeddiffuse.png</texture>
+						<texture flipx="true">recentlyaddeddiffuse.png</texture>
 					</control>
               <control type="label">
+                <description>Selected Movie Title</description>
                 <posx>20</posx>
                 <posy>26</posy>
                 <width>250</width>
@@ -691,9 +694,9 @@
                 <font>cirrus_20</font>
                 <textcolor>black</textcolor>
                 <selectedcolor>selected</selectedcolor>
-               <align>left</align>
-				<aligny>center</aligny>
-				<scroll>false</scroll>
+                <align>left</align>
+        				<aligny>center</aligny>
+        				<scroll>false</scroll>
                 <label>$INFO[ListItem.Label]</label>
               </control>
             </focusedlayout>
@@ -708,8 +711,8 @@
                 <property name="Year">$INFO[Window(Home).Property(RecentMovie.1.Year)]</property>
                 <property name="RunningTime">$INFO[Window(Home).Property(RecentMovie.1.Runtime)]</property>
                 <property name="Fanart">$INFO[Window(Home).Property(RecentMovie.1.Art(fanart))]</property>
-				<property name="Genre">$INFO[Window(Home).Property(RecentMovie.1.Genre)]</property>
-				<visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
+        				<property name="Genre">$INFO[Window(Home).Property(RecentMovie.1.Genre)]</property>
+        				<visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
               </item>
               <item id="2">
                 <label>$INFO[Window(Home).Property(RecentMovie.2.Title)]</label>
@@ -721,8 +724,8 @@
                 <property name="Year">$INFO[Window(Home).Property(RecentMovie.2.Year)]</property>
                 <property name="RunningTime">$INFO[Window(Home).Property(RecentMovie.2.Runtime)]</property>
                 <property name="Fanart">$INFO[Window(Home).Property(RecentMovie.2.Art(fanart))]</property>
-				<property name="Genre">$INFO[Window(Home).Property(RecentMovie.2.Genre)]</property>
-				<visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
+        				<property name="Genre">$INFO[Window(Home).Property(RecentMovie.2.Genre)]</property>
+        				<visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
               </item>
               <item id="3">
                 <label>$INFO[Window(Home).Property(RecentMovie.3.Title)]</label>
@@ -734,8 +737,8 @@
                 <property name="Year">$INFO[Window(Home).Property(RecentMovie.3.Year)]</property>
                 <property name="RunningTime">$INFO[Window(Home).Property(RecentMovie.3.Runtime)]</property>
                 <property name="Fanart">$INFO[Window(Home).Property(RecentMovie.3.Art(fanart))]</property>
-				<property name="Genre">$INFO[Window(Home).Property(RecentMovie.3.Genre)]</property>
-				<visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
+        				<property name="Genre">$INFO[Window(Home).Property(RecentMovie.3.Genre)]</property>
+        				<visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
               </item>
               <item id="4">
                 <label>$INFO[Window(Home).Property(RecentMovie.4.Title)]</label>
@@ -747,8 +750,8 @@
                 <property name="Year">$INFO[Window(Home).Property(RecentMovie.4.Year)]</property>
                 <property name="RunningTime">$INFO[Window(Home).Property(RecentMovie.4.Runtime)]</property>
                 <property name="Fanart">$INFO[Window(Home).Property(RecentMovie.4.Art(fanart))]</property>
-				<property name="Genre">$INFO[Window(Home).Property(RecentMovie.4.Genre)]</property>
-				<visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
+        				<property name="Genre">$INFO[Window(Home).Property(RecentMovie.4.Genre)]</property>
+        				<visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
               </item>
               <item id="5">
                 <label>$INFO[Window(Home).Property(RecentMovie.5.Title)]</label>
@@ -760,8 +763,8 @@
                 <property name="Year">$INFO[Window(Home).Property(RecentMovie.5.Year)]</property>
                 <property name="RunningTime">$INFO[Window(Home).Property(RecentMovie.5.Runtime)]</property>
                 <property name="Fanart">$INFO[Window(Home).Property(RecentMovie.5.Art(fanart))]</property>
-				<property name="Genre">$INFO[Window(Home).Property(RecentMovie.5.Genre)]</property>
-				<visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
+        				<property name="Genre">$INFO[Window(Home).Property(RecentMovie.5.Genre)]</property>
+        				<visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
               </item>
               <item id="6">
                 <label>$INFO[Window(Home).Property(RecentMovie.6.Title)]</label>
@@ -773,8 +776,8 @@
                 <property name="Year">$INFO[Window(Home).Property(RecentMovie.6.Year)]</property>
                 <property name="RunningTime">$INFO[Window(Home).Property(RecentMovie.6.Runtime)]</property>
                 <property name="Fanart">$INFO[Window(Home).Property(RecentMovie.6.Art(fanart))]</property>
-				<property name="Genre">$INFO[Window(Home).Property(RecentMovie.6.Genre)]</property>
-				<visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
+        				<property name="Genre">$INFO[Window(Home).Property(RecentMovie.6.Genre)]</property>
+        				<visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
               </item>
               <item id="7">
                 <label>$INFO[Window(Home).Property(RecentMovie.7.Title)]</label>
@@ -786,8 +789,8 @@
                 <property name="Year">$INFO[Window(Home).Property(RecentMovie.7.Year)]</property>
                 <property name="RunningTime">$INFO[Window(Home).Property(RecentMovie.7.Runtime)]</property>
                 <property name="Fanart">$INFO[Window(Home).Property(RecentMovie.7.Art(fanart))]</property>
-				<property name="Genre">$INFO[Window(Home).Property(RecentMovie.7.Genre)]</property>
-				<visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
+        				<property name="Genre">$INFO[Window(Home).Property(RecentMovie.7.Genre)]</property>
+        				<visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
               </item>
 			  <item id="8">
                 <label>$INFO[Window(Home).Property(RecentMovie.8.Title)]</label>
@@ -799,8 +802,8 @@
                 <property name="Year">$INFO[Window(Home).Property(RecentMovie.8.Year)]</property>
                 <property name="RunningTime">$INFO[Window(Home).Property(RecentMovie.8.Runtime)]</property>
                 <property name="Fanart">$INFO[Window(Home).Property(RecentMovie.8.Art(fanart))]</property>
-				<property name="Genre">$INFO[Window(Home).Property(RecentMovie.8.Genre)]</property>
-				<visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
+        				<property name="Genre">$INFO[Window(Home).Property(RecentMovie.8.Genre)]</property>
+        				<visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
               </item>
 			  <item id="9">
                 <label>$INFO[Window(Home).Property(RecentMovie.9.Title)]</label>
@@ -812,8 +815,8 @@
                 <property name="Year">$INFO[Window(Home).Property(RecentMovie.9.Year)]</property>
                 <property name="RunningTime">$INFO[Window(Home).Property(RecentMovie.9.Runtime)]</property>
                 <property name="Fanart">$INFO[Window(Home).Property(RecentMovie.9.Art(fanart))]</property>
-				<property name="Genre">$INFO[Window(Home).Property(RecentMovie.9.Genre)]</property>
-				<visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
+        				<property name="Genre">$INFO[Window(Home).Property(RecentMovie.9.Genre)]</property>
+        				<visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
               </item>
 			  <item id="10">
                 <label>$INFO[Window(Home).Property(RecentMovie.10.Title)]</label>
@@ -825,8 +828,8 @@
                 <property name="Year">$INFO[Window(Home).Property(RecentMovie.10.Year)]</property>
                 <property name="RunningTime">$INFO[Window(Home).Property(RecentMovie.10.Runtime)]</property>
                 <property name="Fanart">$INFO[Window(Home).Property(RecentMovie.10.Art(fanart))]</property>
-				<property name="Genre">$INFO[Window(Home).Property(RecentMovie.10.Genre)]</property>
-				<visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
+        				<property name="Genre">$INFO[Window(Home).Property(RecentMovie.10.Genre)]</property>
+        				<visible>!Skin.HasSetting(watchlistmovies)+Container(9000).HasFocus(1)</visible>
               </item>
 			   <item id="81">
               <label>$INFO[Window(Home).Property(RecommendedMovie.1.Title)]</label>
@@ -1370,31 +1373,28 @@
               <posx>120</posx>
               <width>533</width>
               <height>25</height>
-              
               <posy>60</posy>
               <label>[COLOR=accent]$LOCALIZE[562]:[/COLOR] $INFO[Container(8006).ListItem.Property(Year)]</label>
               <font>cirrus_20</font>
-				<shadowcolor>black</shadowcolor>
+				      <shadowcolor>black</shadowcolor>
             </control>
 			  <control type="label">
               <posx>120</posx>
               <width>533</width>
               <height>25</height>
-              
               <posy>85</posy>
               <label>[COLOR=accent]$LOCALIZE[368]:[/COLOR] $INFO[Container(8006).ListItem.Property(Rating)]</label>
               <font>cirrus_20</font>
-				<shadowcolor>black</shadowcolor>
+				      <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
               <posx>120</posx>
               <width>533</width>
               <height>25</height>
-              
               <posy>110</posy>
               <label>[COLOR=accent]$LOCALIZE[31054]:[/COLOR] $INFO[Container(8006).ListItem.Property(RunningTime)]</label>
-             <font>cirrus_20</font>
-				<shadowcolor>black</shadowcolor>
+              <font>cirrus_20</font>
+				      <shadowcolor>black</shadowcolor>
             </control>
 			<!-- Plot Movie -->
             <control type="textbox">
@@ -1504,9 +1504,9 @@
                 <font>cirrus_20</font>
                 <textcolor>black</textcolor>
                 <selectedcolor>selected</selectedcolor>
-               <align>left</align>
-				<aligny>center</aligny>
-				<scroll>false</scroll>
+                <align>left</align>
+        				<aligny>center</aligny>
+        				<scroll>false</scroll>
                 <label>$INFO[ListItem.Label]</label>
               </control>
             </focusedlayout>
@@ -1521,7 +1521,7 @@
                 <property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu1.1.Year)]</property>
                 <property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.1.RunningTime)]</property>
                 <property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.1.Fanart)]</property>
-				<property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu1.1.Genre)]</property>
+				        <property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu1.1.Genre)]</property>
               </item>
               <item id="2">
                 <label>$INFO[Window.Property(PlaylistLastMovieMenu1.2.Title)]</label>
@@ -1533,7 +1533,7 @@
                 <property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu1.2.Year)]</property>
                 <property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.2.RunningTime)]</property>
                 <property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.2.Fanart)]</property>
-				<property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu1.2.Genre)]</property>
+				        <property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu1.2.Genre)]</property>
               </item>
               <item id="3">
                 <label>$INFO[Window.Property(PlaylistLastMovieMenu1.3.Title)]</label>
@@ -1545,7 +1545,7 @@
                 <property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu1.3.Year)]</property>
                 <property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.3.RunningTime)]</property>
                 <property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.3.Fanart)]</property>
-				<property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu1.3.Genre)]</property>
+				        <property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu1.3.Genre)]</property>
               </item>
               <item id="4">
                 <label>$INFO[Window.Property(PlaylistLastMovieMenu1.4.Title)]</label>
@@ -1557,7 +1557,7 @@
                 <property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu1.4.Year)]</property>
                 <property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.4.RunningTime)]</property>
                 <property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.4.Fanart)]</property>
-				<property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu1.4.Genre)]</property>
+				        <property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu1.4.Genre)]</property>
               </item>
               <item id="5">
                 <label>$INFO[Window.Property(PlaylistLastMovieMenu1.5.Title)]</label>
@@ -1569,7 +1569,7 @@
                 <property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu1.5.Year)]</property>
                 <property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.5.RunningTime)]</property>
                 <property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.5.Fanart)]</property>
-				<property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu1.5.Genre)]</property>
+				        <property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu1.5.Genre)]</property>
               </item>
               <item id="6">
                 <label>$INFO[Window.Property(PlaylistLastMovieMenu1.6.Title)]</label>
@@ -1581,7 +1581,7 @@
                 <property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu1.6.Year)]</property>
                 <property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.6.RunningTime)]</property>
                 <property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.6.Fanart)]</property>
-				<property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu1.6.Genre)]</property>
+				        <property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu1.6.Genre)]</property>
               </item>
               <item id="7">
                 <label>$INFO[Window.Property(PlaylistLastMovieMenu1.7.Title)]</label>
@@ -1593,7 +1593,7 @@
                 <property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu1.7.Year)]</property>
                 <property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.7.RunningTime)]</property>
                 <property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.7.Fanart)]</property>
-				<property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu1.7.Genre)]</property>
+				        <property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu1.7.Genre)]</property>
               </item>
 			  <item id="8">
                 <label>$INFO[Window.Property(PlaylistLastMovieMenu1.8.Title)]</label>
@@ -1605,7 +1605,7 @@
                 <property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu1.8.Year)]</property>
                 <property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.8.RunningTime)]</property>
                 <property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.8.Fanart)]</property>
-				<property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu1.8.Genre)]</property>
+				        <property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu1.8.Genre)]</property>
               </item>
 			  <item id="9">
                <label>$INFO[Window.Property(PlaylistLastMovieMenu1.9.Title)]</label>
@@ -1617,7 +1617,7 @@
                 <property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu1.9.Year)]</property>
                 <property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.9.RunningTime)]</property>
                 <property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.9.Fanart)]</property>
-				<property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu1.9.Genre)]</property>
+				        <property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu1.9.Genre)]</property>
               </item>
 			  <item id="10">
                 <label>$INFO[Window.Property(PlaylistLastMovieMenu1.10.Title)]</label>
@@ -1629,7 +1629,7 @@
                 <property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu1.10.Year)]</property>
                 <property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.10.RunningTime)]</property>
                 <property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.10.Fanart)]</property>
-				<property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu1.10.Genre)]</property>
+				        <property name="Genre">$INFO[Window.Property(PlaylistLastMovieMenu1.10.Genre)]</property>
               </item>
             </content>
           </control>
@@ -1886,7 +1886,7 @@
             <align>center</align>
             <aligny>center</aligny>
             <label>$INFO[Container(8007).ListItem.Label]</label>
-              <font>cirrus_20</font>
+            <font>cirrus_20</font>
             <textcolor>white</textcolor>
             <shadowcolor>black</shadowcolor>
             <scrollspeed>30</scrollspeed>
@@ -1897,8 +1897,8 @@
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
             <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
             <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-			<visible>!Skin.HasSetting(themelighthorz)</visible>
-			<visible>Skin.HasSetting(nomoviewidgetplaylistmovie2)</visible>
+      			<visible>!Skin.HasSetting(themelighthorz)</visible>
+      			<visible>Skin.HasSetting(nomoviewidgetplaylistmovie2)</visible>
           </control>
 		   <control type="label">
             <description>Title label</description>
@@ -1920,8 +1920,8 @@
             <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
             <animation effect="fade" start="0" end="100" delay="500" time="800">Visible</animation>
             <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-			<visible>Skin.HasSetting(themelighthorz)</visible>
-		    <visible>Skin.HasSetting(nomoviewidgetplaylistmovie2)</visible>
+    			  <visible>Skin.HasSetting(themelighthorz)</visible>
+    		    <visible>Skin.HasSetting(nomoviewidgetplaylistmovie2)</visible>
           </control>
         </control>
         <control type="group">
@@ -2033,7 +2033,6 @@
               <posx>120</posx>
               <width>533</width>
               <height>25</height>
-              
               <posy>60</posy>
               <label>[COLOR=accent]$LOCALIZE[562]:[/COLOR] $INFO[Container(8007).ListItem.Property(Year)]</label>
               <font>cirrus_20</font>
@@ -2043,7 +2042,6 @@
               <posx>120</posx>
               <width>533</width>
               <height>25</height>
-              
               <posy>85</posy>
               <label>[COLOR=accent]$LOCALIZE[368]:[/COLOR] $INFO[Container(8007).ListItem.Property(Rating)]</label>
               <font>cirrus_20</font>
@@ -2053,7 +2051,6 @@
               <posx>120</posx>
               <width>533</width>
               <height>25</height>
-              
               <posy>110</posy>
               <label>[COLOR=accent]$LOCALIZE[31054]:[/COLOR] $INFO[Container(8007).ListItem.Property(RunningTime)]</label>
              <font>cirrus_20</font>
@@ -2068,8 +2065,8 @@
               <align>left</align>
               <aligny>top</aligny>
               <font>cirrus_20</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
+      				<textcolor>white</textcolor>
+      				<shadowcolor>black</shadowcolor>
               <label>$INFO[Container(8007).ListItem.Label2]</label>
               <autoscroll delay="5000" time="3000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
             </control>
@@ -2080,8 +2077,8 @@
             <width>153</width>
             <height>230</height>
            <texture>black-back.png</texture>
-			<bordertexture border="6">contentpanelvertical.png</bordertexture>
-			<bordersize>6</bordersize>
+      			<bordertexture border="6">contentpanelvertical.png</bordertexture>
+      			<bordersize>6</bordersize>
             <aspectratio scalediffuse="false">stretch</aspectratio>
 			<fadetime>400</fadetime>
           </control>
@@ -2092,7 +2089,7 @@
             <width>153</width>
             <height>230</height>
             <texture background="true" fallback="DefaultVideo.png">$INFO[Container(8007).ListItem.Icon]</texture>
-			<bordersize>8</bordersize>
+      			<bordersize>8</bordersize>
             <aspectratio scalediffuse="false">stretch</aspectratio>
 			<fadetime>400</fadetime>
 			<visible>Container(9000).HasFocus(4)</visible>
@@ -2146,8 +2143,8 @@
                 <shadowcolor>black</shadowcolor>
                 <selectedcolor>selected</selectedcolor>
                 <align>left</align>
-				<aligny>center</aligny>
-				<scroll>false</scroll>
+        				<aligny>center</aligny>
+        				<scroll>false</scroll>
                 <label>$INFO[ListItem.Label]</label>
               </control>
             </itemlayout>
@@ -3799,7 +3796,6 @@
               <posx>28</posx>
               <width>533</width>
               <height>25</height>
-              
               <posy>8</posy>
               <label>[COLOR=accent]$LOCALIZE[20373]:[/COLOR] $INFO[Container(8001).ListItem.Property(EpisodeSeason)]</label>
 			  <font>cirrus_20</font>
@@ -3810,7 +3806,6 @@
               <posx>28</posx>
               <width>533</width>
               <height>25</height>
-              
               <posy>8</posy>
               <label>[COLOR=accent]$LOCALIZE[20373]:[/COLOR] $INFO[Container(8001).ListItem.Property(Season)]</label>
 			  <font>cirrus_20</font>
@@ -3821,7 +3816,6 @@
               <posx>28</posx>
               <width>533</width>
               <height>25</height>
-              
               <posy>34</posy>
               <label>[COLOR=accent]$LOCALIZE[20359]:[/COLOR] $INFO[Container(8001).ListItem.Property(EpisodeNumber)]</label>
 			  <font>cirrus_20</font>
@@ -3832,7 +3826,6 @@
               <posx>28</posx>
               <width>533</width>
               <height>25</height>
-              
               <posy>34</posy>
               <label>[COLOR=accent]$LOCALIZE[20359]:[/COLOR] $INFO[Container(8001).ListItem.Property(Episode)]</label>
 			  <font>cirrus_20</font>
