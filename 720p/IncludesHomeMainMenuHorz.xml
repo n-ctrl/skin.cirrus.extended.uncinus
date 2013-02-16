@@ -13,7 +13,7 @@
 		</control>
 		<control type="image">
 			<posx>-100</posx>
-			<posy>423</posy>
+			<posy>420</posy>
 			<width>1480</width>
 			<height>20</height>
 			<texture>white-reflec1t.png</texture>
@@ -200,42 +200,16 @@
 			<visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu)</visible>
 			<visible>!Skin.HasSetting(themelighthorz)</visible>
 		</control>
-		<control type="image">
-			<posx>-100</posx>
+    <control type="image">
+    <!-- mod Yohan - horizontal menubar -->
+			<posx>0</posx>
 			<posy>100r</posy>
-			<width>1480</width>
-			<height>20</height>
-			<texture>white-reflec1t.png</texture>
+      <width>1280</width>
+			<height>80</height>
+			<texture>horzmenuback.png</texture>
 			<visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu)</visible>
-			<visible>Skin.HasSetting(themelighthorz)</visible>
-		</control>
-		<control type="image">
-			<posx>-100</posx>
-			<posy>42r</posy>
-			<width>1480</width>
-			<height>20</height>
-			<texture flipy="true">white-reflec1t.png</texture>
-			<visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu)</visible>
-			<visible>Skin.HasSetting(themelighthorz)</visible>
-		</control>
-		<control type="image">
-			<posx>-100</posx>
-			<posy>100r</posy>
-			<width>1480</width>
-			<height>105</height>
-			<texture flipy="true">nowplaying_shadow.png</texture>
-			<visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu)</visible>
-			<visible>Skin.HasSetting(themelighthorz)</visible>
-		</control>
-		<control type="image">
-			<posx>-100</posx>
-			<posy>100r</posy>
-			<width>1480</width>
-			<height>105</height>
-			<texture>nowplaying_shadow.png</texture>
-			<visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu)</visible>
-			<visible>Skin.HasSetting(themelighthorz)</visible>
-		</control>
+		</control>	
+
 		<control type="videowindow">
 		  <posx>382</posx>
 		  <posy>104</posy>

@@ -39,8 +39,8 @@
 		<randomize>true</randomize>
 		<fadetime>500</fadetime>
 		<animation effect="zoom" start="110" end="135" center="auto" time="15000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
-        <animation effect="slide" end="-20,-20" delay="4000" time="8000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
-        <animation effect="slide" end="40,0" delay="10000" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
+    <animation effect="slide" end="-20,-20" delay="4000" time="8000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
+    <animation effect="slide" end="40,0" delay="10000" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
     </control>-->
 	 <control type="multiimage">
 		<visible>Skin.HasSetting(Menu_RandomCustom1)</visible>
@@ -889,7 +889,8 @@
 	  <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
 	  <!-- 2.06 -->
 	</control>
-	 <control type="image">
+	<!-- disabled top texture / button background 
+  <control type="image">
 	  <posx>-100</posx>
 	  <posy>-20</posy>
 	  <width>1480</width>
@@ -899,7 +900,7 @@
 	  <visible>!Skin.HasSetting(cleanHome)</visible>
     <visible>!Skin.HasSetting(homeNoClock)</visible>
 	  <visible>!Skin.HasSetting(originalcirrusclock)</visible>
-	</control> -->
+	</control>
 	<control type="image">
 	  <posx>-100</posx>
 	  <posy>-20</posy>
@@ -910,6 +911,7 @@
 	   <visible>Skin.HasSetting(cleanHome) | !Skin.HasSetting(homeNoClock)</visible>
 	   <visible>!Skin.HasSetting(originalcirrusclock)</visible>
 	</control>
+  -->
 
     <!-- BUTTONS BOTTOM LEFT (not visible if cleanHome selected -->
     <control type="group" id="10">
@@ -1265,16 +1267,18 @@
   <control type="group">
     <posx>140</posx>
     <posy>15</posy>
+	  <!--
     <control type="image">
       <posx>-150</posx>
       <posy>25r</posy>
       <width>1480</width>
-	  <height>205</height>
-	  <texture>nowplaying_shadow4.png</texture>
-		<visible>Skin.HasSetting(themelighthorz)</visible>
+  	  <height>205</height>
+      <texture>nowplaying_shadow4.png</texture>
+  		<visible>Skin.HasSetting(themelighthorz)</visible>
       <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu)</visible>
-	  <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
+  	  <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
     </control>
+    -->
     <control type="rss">
       <description>RSS feed</description>
       <posx>1280r</posx>
