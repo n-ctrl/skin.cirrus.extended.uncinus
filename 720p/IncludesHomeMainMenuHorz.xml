@@ -497,7 +497,8 @@
 					<visible>!Skin.HasSetting(HomeMenuNoHDMoviesButton)</visible>
 				</item>
 			<item id="7">
-					<label>41103</label>
+					<description>TV Series</description>
+          <label>41103</label>
 					<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
 					<icon>special://skin/backgrounds/tv_shows.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</thumb>
@@ -622,7 +623,8 @@
 					<visible>Skin.HasSetting(Menu_Custom8)</visible>
 				</item>	
 			<item id="21">
-					<label>1036</label>
+					<description>Favourites</description>
+          <label>1036</label>
 					<onclick>ActivateWindow(Favourites)</onclick>
 					<icon>special://skin/backgrounds/favourite.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Favourites_Folder)]</thumb>
