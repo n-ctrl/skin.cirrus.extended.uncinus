@@ -13,7 +13,7 @@
 		</control>
 		<control type="image">
 			<posx>-100</posx>
-			<posy>420</posy>
+			<posy>423</posy>
 			<width>1480</width>
 			<height>20</height>
 			<texture>white-reflec1t.png</texture>
@@ -22,7 +22,7 @@
 		</control>
 		<control type="image">
 			<posx>-100</posx>
-			<posy>485</posy>
+			<posy>483</posy>
 			<width>1480</width>
 			<height>20</height>
 			<texture flipy="true">white-reflec1t.png</texture>
@@ -449,7 +449,7 @@
 					<visible>!Skin.HasSetting(HomeMenuNoMoviesButton) + Library.HasContent(Movies)</visible>
 				</item>
 				<item id="30">
-			        <description>Movie Sets</description>
+			    <description>Movie Sets</description>
 					<label>41183</label>
 					<icon>special://skin/backgrounds/moviesets.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_MovieSets_Folder)]</thumb>

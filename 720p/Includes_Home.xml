@@ -1190,14 +1190,30 @@
 				  <animation type="WindowClose" reversible="false">
 					  <effect type="fade" start="100" end="0" time="200" />
 				  </animation>
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1120</width>
-				<height>210</height>
-				<texture>videoinfoback.png</texture>
+			<!-- MOD YoHan background system info -->
+      <control type="image">
+        <posx>0</posx>
+        <posy>-80</posy>
+        <width>1280</width>
+        <height>430</height>
+        <texture flipy="true">nowplaying_shadow1.png</texture>        
 			</control>
-		
+			<control type="image">
+        <posx>0</posx>
+        <posy>-80</posy>
+        <width>1280</width>
+        <height>430</height>
+        <texture flipy="true">nowplaying_shadow1.png</texture>        
+			</control>
+	    <control type="image">
+        <posx>0</posx>
+        <posy>220</posy>
+        <width>1280</width>
+        <height>1</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>separator.png</texture>
+      </control>  
+      
 		<control type="group">
 				<posx>25</posx>
 				<posy>25</posy>			

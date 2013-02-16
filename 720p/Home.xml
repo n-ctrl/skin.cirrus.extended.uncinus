@@ -274,126 +274,64 @@
 			<posy>90</posy>
 			<visible>Container(9000).HasFocus(24)</visible>
 			<visible>!StringCompare(Weather.Plugin,weather.weatherplus)</visible>
-			<!-- <control type="label">
-				<description>location label</description>
-				<posx>380</posx>
-				<posy>15</posy>
-				<height>28</height>
-				<width>520</width>
-				<label>$INFO[Window(Weather).Property(Location)]  [COLOR=accent]$INFO[Weather.Temperature][/COLOR]  $INFO[Window(Weather).Property(Current.Condition)]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>cirrus_22</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-			</control> -->
-			<control type="image">
-				<description>background for curren widget light</description>
-				<posx>25</posx>
-				<posy>-5</posy>
-				<width>200</width>
-				<height>250</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<texture>nowplaying_shadow5.png</texture>
-				<visible>!Skin.HasSetting(NoBackgroundWeatherWidget)</visible>
-				<visible>Skin.HasSetting(themelighthorz)</visible>
+			
+      <!-- MOD YoHan background weather info -->
+      <control type="image">
+        <posx>0</posx>
+        <posy>-100</posy>
+        <width>1280</width>
+        <height>430</height>
+        <texture flipy="true">nowplaying_shadow1.png</texture>        
 			</control>
 			<control type="image">
-				<description>background for weather widget Current</description>
-				<posx>25</posx>
-				<posy>-5</posy>
-				<width>200</width>
-				<height>250</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<texture>ContentPanelvertical.png</texture>
-				<aspectratio>stretch</aspectratio>
-				<visible>!Skin.HasSetting(NoBackgroundWeatherWidget)</visible>
-				<visible>!Skin.HasSetting(themelighthorz)</visible>
+        <posx>0</posx>
+        <posy>-100</posy>
+        <width>1280</width>
+        <height>430</height>
+        <texture flipy="true">nowplaying_shadow1.png</texture>        
 			</control>
+	    <control type="image">
+        <posx>0</posx>
+        <posy>240</posy>
+        <width>1280</width>
+        <height>1</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>separator.png</texture>
+      </control>        
+      <!-- MOD YoHan background weather info -->
+      
+ 			 <control type="image">
+          <posx>50</posx>
+          <posy>35</posy>
+          <width>150</width>
+          <height>1</height>
+          <aspectratio>stretch</aspectratio>
+          <texture>separator.png</texture>
+       </control>
 			 <control type="image">
-              <posx>50</posx>
-              <posy>35</posy>
-              <width>150</width>
-              <height>1</height>
-              <aspectratio>stretch</aspectratio>
-              <texture>separator.png</texture>
-            </control>
+        <posx>50</posx>
+        <posy>190</posy>
+        <width>150</width>
+        <height>1</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>separator.png</texture>
+      </control>
 			 <control type="image">
-              <posx>50</posx>
-              <posy>190</posy>
-              <width>150</width>
-              <height>1</height>
-              <aspectratio>stretch</aspectratio>
-              <texture>separator.png</texture>
-            </control>
-			<control type="image">
-				<description>background for curren widget light Day0</description>
-				<posx>280</posx>
-				<posy>-5</posy>
-				<width>200</width>
-				<height>250</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<texture>nowplaying_shadow5.png</texture>
-				<visible>!Skin.HasSetting(NoBackgroundWeatherWidget)</visible>
-				<visible>Skin.HasSetting(themelighthorz)</visible>
-			</control>
-			<control type="image">
-				<description>background for weather widget Day0</description>
-				<posx>280</posx>
-				<posy>-5</posy>
-				<width>200</width>
-				<height>250</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<texture>ContentPanelvertical.png</texture>
-				<aspectratio>stretch</aspectratio>
-				<visible>!Skin.HasSetting(NoBackgroundWeatherWidget)</visible>
-				<visible>!Skin.HasSetting(themelighthorz)</visible>
-			</control>
+          <posx>305</posx>
+          <posy>35</posy>
+          <width>150</width>
+          <height>1</height>
+          <aspectratio>stretch</aspectratio>
+          <texture>separator.png</texture>
+        </control>
 			 <control type="image">
-              <posx>305</posx>
-              <posy>35</posy>
-              <width>150</width>
-              <height>1</height>
-              <aspectratio>stretch</aspectratio>
-              <texture>separator.png</texture>
-            </control>
-			 <control type="image">
-              <posx>305</posx>
-              <posy>190</posy>
-              <width>150</width>
-              <height>1</height>
-              <aspectratio>stretch</aspectratio>
-              <texture>separator.png</texture>
-            </control>
-			<control type="image">
-				<description>background for curren widget light Day1</description>
-				<posx>540</posx>
-				<posy>-5</posy>
-				<width>200</width>
-				<height>250</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<texture>nowplaying_shadow5.png</texture>
-				<visible>!Skin.HasSetting(NoBackgroundWeatherWidget)</visible>
-				<visible>Skin.HasSetting(themelighthorz)</visible>
-			</control>
-			<control type="image">
-				<description>background for weather widget Day 1</description>
-				<posx>540</posx>
-				<posy>-5</posy>
-				<width>200</width>
-				<height>250</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<texture>ContentPanelvertical.png</texture>
-				<aspectratio>stretch</aspectratio>
-				<visible>!Skin.HasSetting(NoBackgroundWeatherWidget)</visible>
-				<visible>!Skin.HasSetting(themelighthorz)</visible>
-			</control>
+          <posx>305</posx>
+          <posy>190</posy>
+          <width>150</width>
+          <height>1</height>
+          <aspectratio>stretch</aspectratio>
+          <texture>separator.png</texture>
+       </control>
 			 <control type="image">
               <posx>565</posx>
               <posy>35</posy>
@@ -403,100 +341,50 @@
               <texture>separator.png</texture>
             </control>
 			 <control type="image">
-              <posx>565</posx>
-              <posy>190</posy>
-              <width>150</width>
-              <height>1</height>
-              <aspectratio>stretch</aspectratio>
-              <texture>separator.png</texture>
-            </control>
-			<control type="image">
-				<description>background for curren widget light Day2</description>
-				<posx>795</posx>
-				<posy>-5</posy>
-				<width>200</width>
-				<height>250</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<texture>nowplaying_shadow5.png</texture>
-				<visible>!Skin.HasSetting(NoBackgroundWeatherWidget)</visible>
-				<visible>Skin.HasSetting(themelighthorz)</visible>
-			</control>
-			<control type="image">
-				<description>background for weather widget Day 2</description>
-				<posx>795</posx>
-				<posy>-5</posy>
-				<width>200</width>
-				<height>250</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<texture>ContentPanelvertical.png</texture>
-				<aspectratio>stretch</aspectratio>
-				<visible>!Skin.HasSetting(NoBackgroundWeatherWidget)</visible>
-				<visible>!Skin.HasSetting(themelighthorz)</visible>
-			</control>
+          <posx>565</posx>
+          <posy>190</posy>
+          <width>150</width>
+          <height>1</height>
+          <aspectratio>stretch</aspectratio>
+          <texture>separator.png</texture>
+       </control>
 			 <control type="image">
-              <posx>820</posx>
-              <posy>35</posy>
-              <width>150</width>
-              <height>1</height>
-              <aspectratio>stretch</aspectratio>
-              <texture>separator.png</texture>
-            </control>
+          <posx>820</posx>
+          <posy>35</posy>
+          <width>150</width>
+          <height>1</height>
+          <aspectratio>stretch</aspectratio>
+          <texture>separator.png</texture>
+        </control>
 			 <control type="image">
-              <posx>820</posx>
-              <posy>190</posy>
-              <width>150</width>
-              <height>1</height>
-              <aspectratio>stretch</aspectratio>
-              <texture>separator.png</texture>
-            </control>
-			<control type="image">
-				<description>background for curren widget light Day3</description>
-				<posx>1055</posx>
-				<posy>-5</posy>
-				<width>200</width>
-				<height>250</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<texture>nowplaying_shadow5.png</texture>
-				<visible>!Skin.HasSetting(NoBackgroundWeatherWidget)</visible>
-				<visible>Skin.HasSetting(themelighthorz)</visible>
-			</control>
-			<control type="image">
-				<description>background for weather widget Day 3</description>
-				<posx>1055</posx>
-				<posy>-5</posy>
-				<width>200</width>
-				<height>250</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<texture>ContentPanelvertical.png</texture>
-				<aspectratio>stretch</aspectratio>
-				<visible>!Skin.HasSetting(NoBackgroundWeatherWidget)</visible>
-				<visible>!Skin.HasSetting(themelighthorz)</visible>
-			</control>
+        <posx>820</posx>
+        <posy>190</posy>
+        <width>150</width>
+        <height>1</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>separator.png</texture>
+      </control>
+		 <control type="image">
+        <posx>1080</posx>
+        <posy>35</posy>
+        <width>150</width>
+        <height>1</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>separator.png</texture>
+      </control>
 			 <control type="image">
-              <posx>1080</posx>
-              <posy>35</posy>
-              <width>150</width>
-              <height>1</height>
-              <aspectratio>stretch</aspectratio>
-              <texture>separator.png</texture>
-            </control>
-			 <control type="image">
-              <posx>1080</posx>
-              <posy>190</posy>
-              <width>150</width>
-              <height>1</height>
-              <aspectratio>stretch</aspectratio>
-              <texture>separator.png</texture>
-            </control>
+        <posx>1080</posx>
+        <posy>190</posy>
+        <width>150</width>
+        <height>1</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>separator.png</texture>
+      </control>
 			<control type="label">
 				<description>Condition label Current</description>
-				<posx>50</posx>
+				<posx>25</posx>
 				<posy>200</posy>
-				<width>150</width>
+				<width>200</width>
 				<height>30</height>
          <font>cirrus_18</font>
          <textcolor>white</textcolor>
@@ -510,8 +398,8 @@
 				<posy>0</posy>
 				<width>150</width>
 				<height>30</height>
-         <font>cirrus_18</font>
-         <textcolor>white</textcolor>
+        <font>cirrus_18</font>
+        <textcolor>white</textcolor>
 				<label>33006</label>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -522,21 +410,21 @@
 				<posy>140</posy>
 				<width>150</width>
 				<height>30</height>
-           		<font>cirrus_50_Bold</font>
-          		<textcolor>white</textcolor>
+     		<font>cirrus_50_Bold</font>
+    		<textcolor>white</textcolor>
 				<label>$INFO[Window(weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 			</control>
 			<control type="label">
 				<description>Day label 0</description>
-				<posx>305</posx>
+				<posx>280</posx>
 				<posy>200</posy>
-				<width>150</width>
+				<width>200</width>
 				<height>30</height>
-           		<font>cirrus_18</font>
-          		<textcolor>white</textcolor>
-			    <info>Window(weather).Property(Day0.Outlook)</info>
+     		<font>cirrus_18</font>
+    		<textcolor>white</textcolor>
+		    <info>Window(weather).Property(Day0.Outlook)</info>
 				<align>center</align>
 				<aligny>center</aligny>
 			</control>
@@ -546,9 +434,9 @@
 				<posy>0</posy>
 				<width>150</width>
 				<height>30</height>
-           		<font>cirrus_18</font>
-          		<textcolor>white</textcolor>
-				 <info>Window(weather).Property(Day0.Title)</info>
+     		<font>cirrus_18</font>
+    		<textcolor>white</textcolor>
+				<info>Window(weather).Property(Day0.Title)</info>
 				<align>center</align>
 				<aligny>center</aligny>
 			</control>
@@ -560,7 +448,7 @@
 				<height>30</height>
            		<font>cirrus_20</font>
           		<textcolor>white</textcolor>
-			    <label>[COLOR=accent]$LOCALIZE[393]:[/COLOR] $INFO[Window(weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits] </label>
+			    <label>[COLOR=selected]$LOCALIZE[393]:[/COLOR] $INFO[Window(weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits] </label>
 				<align>center</align>
 				<aligny>center</aligny>
 			</control>
@@ -578,13 +466,13 @@
 			</control>
 			<control type="label">
 				<description>Day label 1</description>
-				<posx>565</posx>
+				<posx>540</posx>
 				<posy>200</posy>
-				<width>150</width>
+				<width>200</width>
 				<height>30</height>
-           		<font>cirrus_18</font>
-          		<textcolor>white</textcolor>
-			    <info>Window(weather).Property(Day1.Outlook)</info>
+     		<font>cirrus_18</font>
+    		<textcolor>white</textcolor>
+			  <info>Window(weather).Property(Day1.Outlook)</info>
 				<align>center</align>
 				<aligny>center</aligny>
 			</control>
@@ -606,9 +494,9 @@
 				<posy>125</posy>
 				<width>150</width>
 				<height>30</height>
-           		<font>cirrus_20</font>
-          		<textcolor>white</textcolor>
-			    <label>[COLOR=accent]$LOCALIZE[393]:[/COLOR] $INFO[Window(weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits] </label>
+     		<font>cirrus_20</font>
+    		<textcolor>white</textcolor>
+		    <label>[COLOR=accent]$LOCALIZE[393]:[/COLOR] $INFO[Window(weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits] </label>
 				<align>center</align>
 				<aligny>center</aligny>
 			</control>
@@ -618,21 +506,21 @@
 				<posy>155</posy>
 				<width>150</width>
 				<height>30</height>
-           		<font>cirrus_20</font>
-          		<textcolor>white</textcolor>
-			    <label>[COLOR=grey2]$LOCALIZE[391]:[/COLOR] $INFO[Window(weather).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits] </label>
+     		<font>cirrus_20</font>
+    		<textcolor>white</textcolor>
+		    <label>[COLOR=grey2]$LOCALIZE[391]:[/COLOR] $INFO[Window(weather).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits] </label>
 				<align>center</align>
 				<aligny>center</aligny>
 			</control>
 			<control type="label">
 				<description>Day label 2</description>
-				<posx>820</posx>
+				<posx>795</posx>
 				<posy>200</posy>
-				<width>150</width>
+				<width>200</width>
 				<height>30</height>
-           		<font>cirrus_18</font>
-          		<textcolor>white</textcolor>
-			    <info>Window(weather).Property(Day2.Outlook)</info>
+     		<font>cirrus_18</font>
+    		<textcolor>white</textcolor>
+        <info>Window(weather).Property(Day2.Outlook)</info>
 				<align>center</align>
 				<aligny>center</aligny>
 			</control>
@@ -642,8 +530,8 @@
 				<posy>0</posy>
 				<width>150</width>
 				<height>30</height>
-           		<font>cirrus_18</font>
-          		<textcolor>white</textcolor>
+     		<font>cirrus_18</font>
+    		<textcolor>white</textcolor>
 				<label>$INFO[Window(weather).Property(Day2.Title)]</label>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -654,9 +542,9 @@
 				<posy>125</posy>
 				<width>150</width>
 				<height>30</height>
-           		<font>cirrus_20</font>
-          		<textcolor>white</textcolor>
-			    <label>[COLOR=accent]$LOCALIZE[393]:[/COLOR] $INFO[Window(weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits] </label>
+     		<font>cirrus_20</font>
+    		<textcolor>white</textcolor>
+		    <label>[COLOR=accent]$LOCALIZE[393]:[/COLOR] $INFO[Window(weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits] </label>
 				<align>center</align>
 				<aligny>center</aligny>
 			</control>
@@ -666,21 +554,21 @@
 				<posy>155</posy>
 				<width>150</width>
 				<height>30</height>
-           		<font>cirrus_20</font>
-          		<textcolor>white</textcolor>
-			    <label>[COLOR=grey2]$LOCALIZE[391]:[/COLOR] $INFO[Window(weather).Property(Day2.LowTemp)]$INFO[System.TemperatureUnits] </label>
+     		<font>cirrus_20</font>
+    		<textcolor>white</textcolor>
+		    <label>[COLOR=grey2]$LOCALIZE[391]:[/COLOR] $INFO[Window(weather).Property(Day2.LowTemp)]$INFO[System.TemperatureUnits] </label>
 				<align>center</align>
 				<aligny>center</aligny>
 			</control>
 			<control type="label">
 				<description>Day label 3</description>
-				<posx>1080</posx>
+				<posx>1055</posx>
 				<posy>200</posy>
-				<width>150</width>
+				<width>200</width>
 				<height>30</height>
-           		<font>cirrus_18</font>
-          		<textcolor>white</textcolor>
-			    <info>Window(weather).Property(Day3.Outlook)</info>
+     		<font>cirrus_18</font>
+    		<textcolor>white</textcolor>
+		    <info>Window(weather).Property(Day3.Outlook)</info>
 				<align>center</align>
 				<aligny>center</aligny>
 			</control>
@@ -775,7 +663,7 @@
 			<posy>25</posy>
 			<width>70</width>
 			<height>70</height>
-		    <info>Window(weather).Property(Current.ConditionIcon)</info>
+		  <info>Window(weather).Property(Current.ConditionIcon)</info>
 		</control>
 		 <control type="multiimage">
 		<visible>!Skin.HasSetting(NoAnimatedWeatherIcons)</visible>
