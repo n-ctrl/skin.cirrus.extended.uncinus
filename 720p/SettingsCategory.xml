@@ -47,18 +47,18 @@
       </control>
       <control type="image">
         <description>LOGO</description>
-        <posx>100</posx>
-        <posy>30</posy>
-        <width>160</width>
-        <height>40</height>
+        <posx>140</posx>
+        <posy>25</posy>
+        <width>120</width>
+        <height>25</height>
         <texture>xbmc_logo_white.png</texture>
       </control>
       <control type="grouplist" id="3">
         <description>button area</description>
         <posx>10</posx>
-        <posy>90</posy>
+        <posy>70</posy>
         <width>260</width>
-        <height>481</height>
+        <height>500</height>
         <itemgap>-1</itemgap>
         <onleft>60</onleft>
         <onright>5</onright>
@@ -126,7 +126,7 @@
       <textcolor>grey2</textcolor>
       <focusedcolor>white</focusedcolor>
       <texturefocus border="5">listwhitegradient.png</texturefocus>
-      <texturenofocus border="5">MenuItemNF.png</texturenofocus>
+      <texturenofocus border="5">menuitemNF.png</texturenofocus>
       <pulseonselect>false</pulseonselect>
     </control>
     <control type="button" id="7">
@@ -149,7 +149,7 @@
       <textcolor>grey2</textcolor>
       <focusedcolor>white</focusedcolor>
       <texturefocus border="0,2,0,2" flipx="true">listwhitegradient.png</texturefocus>
-      <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+      <texturenofocus border="0,2,0,2">menuitemNF.png</texturenofocus>
     </control>
     <control type="spincontrolex" id="9">
       <description>Default SpinControlex</description>

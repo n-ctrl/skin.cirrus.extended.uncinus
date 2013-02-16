@@ -83,7 +83,7 @@
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+			<texturenofocus border="0,2,0,2">menuitemNF.png</texturenofocus>
 			<texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
 		</control>
 		<control type="radiobutton" id="8">
@@ -94,7 +94,7 @@
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+			<texturenofocus border="0,2,0,2">menuitemNF.png</texturenofocus>
 			<texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
 		</control>
 		<control type="spincontrolex" id="9">
@@ -105,7 +105,7 @@
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
-			<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+			<texturenofocus border="0,2,0,2">menuitemNF.png</texturenofocus>
 			<font>font13</font>
 			<aligny>center</aligny>
 			<reverse>yes</reverse>
@@ -119,7 +119,7 @@
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
-			<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>	
+			<texturenofocus border="0,2,0,2">menuitemNF.png</texturenofocus>	
 			<aligny>center</aligny>
 		</control>
 		<control type="edit" id="12">
@@ -131,7 +131,7 @@
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
-			<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>	
+			<texturenofocus border="0,2,0,2">menuitemNF.png</texturenofocus>	
 		</control>
 
 		<control type="group" id="9001">
@@ -145,7 +145,7 @@
 				<height>40</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+				<texturenofocus border="5">menuitemNF.png</texturenofocus>
 				<texturefocus border="5">button-focus.png</texturefocus>
 				<label>186</label>
 				<font>font12_title</font>
@@ -162,7 +162,7 @@
 				<height>40</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+				<texturenofocus border="5">menuitemNF.png</texturenofocus>
 				<texturefocus border="5">button-focus.png</texturefocus>
 				<label>192</label>
 				<font>font12_title</font>
