@@ -84,7 +84,7 @@
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturenofocus border="0,2,0,2">menuitemNF.png</texturenofocus>
-			<texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
+			<texturefocus border="0,2,0,2">menuitemFO.png</texturefocus>
 		</control>
 		<control type="radiobutton" id="8">
 			<description>Default RadioButton</description>
@@ -95,7 +95,7 @@
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturenofocus border="0,2,0,2">menuitemNF.png</texturenofocus>
-			<texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
+			<texturefocus border="0,2,0,2">menuitemFO.png</texturefocus>
 		</control>
 		<control type="spincontrolex" id="9">
 			<description>Default SpinControlex</description>
@@ -104,7 +104,7 @@
 			<height>40</height>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
+			<texturefocus border="0,2,0,2">menuitemFO.png</texturefocus>
 			<texturenofocus border="0,2,0,2">menuitemNF.png</texturenofocus>
 			<font>font13</font>
 			<aligny>center</aligny>
@@ -118,7 +118,7 @@
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
+			<texturefocus border="0,2,0,2">menuitemFO.png</texturefocus>
 			<texturenofocus border="0,2,0,2">menuitemNF.png</texturenofocus>	
 			<aligny>center</aligny>
 		</control>
@@ -130,7 +130,7 @@
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturefocus border="0,2,0,2">MenuItemFO.png</texturefocus>
+			<texturefocus border="0,2,0,2">menuitemFO.png</texturefocus>
 			<texturenofocus border="0,2,0,2">menuitemNF.png</texturenofocus>	
 		</control>
 

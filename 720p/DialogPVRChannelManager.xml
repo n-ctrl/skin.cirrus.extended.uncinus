@@ -454,7 +454,7 @@
             <posy>0</posy>
             <width>350</width>
             <height>60</height>
-            <texture border="5">MenuItemFO.png</texture>
+            <texture border="5">menuitemFO.png</texture>
             <visible>Control.HasFocus(20)</visible>
             <include>VisibleFadeEffect</include>
           </control>
