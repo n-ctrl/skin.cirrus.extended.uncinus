@@ -62,7 +62,7 @@
 						<height>175</height>
 						<aspectratio>stretch</aspectratio>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<bordertexture border="6">contentpanelvertical.png</bordertexture>
+						<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 						<bordersize>6</bordersize>
 				</control>
 						<control type="image">
@@ -89,7 +89,7 @@
 						<height>175</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>black-back.png</texture>
-				    <bordertexture>contentpanelvertical.png</bordertexture>
+				    <bordertexture>ContentPanelvertical.png</bordertexture>
 				    <bordersize>6</bordersize>
 					</control>
 					<control type="image">
@@ -124,7 +124,7 @@
 						<height>112</height>
 						<aspectratio>stretch</aspectratio>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<bordertexture border="6">contentpanelvertical.png</bordertexture>
+						<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 						<bordersize>6</bordersize>
 				</control>
 				</control>
@@ -152,7 +152,7 @@
 						<height>112</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>black-back.png</texture>
-						<bordertexture border="6">contentpanelvertical.png</bordertexture>
+						<bordertexture border="6">ContentPanelvertical.png</bordertexture>
 						<bordersize>6</bordersize>
 						</control>
 					<control type="image">
@@ -371,7 +371,7 @@
 					<height>303</height>
 					<aspectratio>stretch</aspectratio>
 					<texture>black-back.png</texture>
-					<bordertexture border="8">contentpanelvertical.png</bordertexture>
+					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
 					<visible>!Skin.HasSetting(Smallwindowhidden)</visible>
 					<visible>!Player.HasVideo | !Skin.HasSetting(videowindownoborder) | !Skin.HasSetting(videowindowglobal)</visible>
@@ -667,7 +667,7 @@
 					<height>303</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<texture>black-back.png</texture>
-					<bordertexture border="8">contentpanelvertical.png</bordertexture>
+					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
 					<visible>!Skin.HasSetting(SmallwindowhiddenTV)</visible>
 					<visible>!Player.HasVideo | !Skin.HasSetting(videowindownoborder) | !Skin.HasSetting(videowindowglobal)</visible>
@@ -813,7 +813,7 @@
 					<height>106</height>
 				  <aspectratio>stretch</aspectratio>
           <texture background="true">$INFO[ListItem.Art(season.banner)]</texture>
-					<bordertexture border="8">contentpanelvertical.png</bordertexture>
+					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 				  <bordersize>8</bordersize>
 				</control>
 
@@ -855,7 +855,7 @@
 					<height>303</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<texture>black-back.png</texture>
-					<bordertexture border="8">contentpanelvertical.png</bordertexture>
+					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
 					<visible>!Player.HasVideo | !Skin.HasSetting(videowindownoborder) | !Skin.HasSetting(videowindowglobal)</visible>
 					<visible>!Skin.HasSetting(SmallwindowhiddenTV)</visible>
@@ -1089,7 +1089,7 @@
 					<height>303</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<texture>black-back.png</texture>
-					<bordertexture border="8">contentpanelvertical.png</bordertexture>
+					<bordertexture border="8">ContentPanelvertical.png</bordertexture>
 					<bordersize>8</bordersize>
 					<visible>!Skin.HasSetting(SmallwindowhiddenTV)</visible>
 					<visible>!Player.HasVideo | !Skin.HasSetting(videowindownoborder) | !Skin.HasSetting(videowindowglobal)</visible>
