@@ -13,7 +13,7 @@
 			<include>VisibleFadeEffect</include>
 			<control type="image"> <!-- bottom bar background -->
 				<posx>0</posx>
-				<posy>210r</posy>
+				<posy>180r</posy>
 				<width>1280</width>
 				<height>700</height>
 				<aspectratio>stretch</aspectratio>
@@ -46,9 +46,9 @@
 			<!-- RIGHT LIST -->
 			<control type="list" id="566">
 				<posx>600r</posx>
-				<posy>90</posy>
+				<posy>60</posy>
 				<width>600</width>
-				<height>420</height>
+				<height>480</height>
 				<onright>2</onright>
 				<onleft>60</onleft>
 				<onup>566</onup>
@@ -58,12 +58,12 @@
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<visible>Window.IsVisible(MusicFiles) | Window.IsVisible(MusicPlaylist) |  Container.Content(Songs) | Container.Content(Albums) | Container.Content(Artists) | Container.Content(Genres)</visible>
-				<itemlayout height="70" width="580">
+				<itemlayout height="60" width="580">
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>700</width>
-						<height>70</height>
+						<height>60</height>
 						<aligny>bottom</aligny>
 						<texture border="2,2,2,2" diffuse="rowdiffuse.png">rowblank2.png</texture>
 					</control>
@@ -72,7 +72,7 @@
 						<posx>10r</posx>
 						<posy>5</posy>
 						<width>445</width>
-						<height>35</height>
+						<height>30</height>
 						<label>$INFO[listitem.Label]</label>
 						<selectedcolor>accent</selectedcolor>
 						<align>right</align>
@@ -84,7 +84,7 @@
 					<control type="label">
 						<description>Artist</description>
 						<posx>10r</posx>
-						<posy>35</posy>
+						<posy>30</posy>
 						<width>445</width>
 						<height>35</height>
 						<label>$INFO[listitem.Label2]</label>
@@ -96,12 +96,12 @@
 						<scroll>false</scroll>
 					</control>
 				</itemlayout>
-				<focusedlayout height="70" width="580">
+				<focusedlayout height="60" width="580">
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>700</width>
-						<height>70</height>
+						<height>60</height>
 						<texture border="2,2,2,2">rowfocusback.png</texture>
 					</control>
 					<control type="label">
@@ -109,7 +109,7 @@
 						<posx>10r</posx>
 						<posy>5</posy>
 						<width>445</width>
-						<height>35</height>
+						<height>30</height>
 						<label>$INFO[listitem.Label]</label>
 						<selectedcolor>black</selectedcolor>
 						<align>right</align>
@@ -121,9 +121,9 @@
 					<control type="label">
 						<description>Artist</description>
 						<posx>10r</posx>
-						<posy>35</posy>
+						<posy>30</posy>
 						<width>445</width>
-						<height>35</height>
+						<height>30</height>
 						<label>$INFO[listitem.Label2]</label>
 						<selectedcolor>black</selectedcolor>
 						<align>right</align>
@@ -142,7 +142,7 @@
 					<posy>330</posy>
 					<control type="image">
 						<posx>0</posx>
-						<posy>0</posy>
+						<posy>30</posy>
 						<width>350</width>
 						<height>350</height>
 						<aspectratio aligny="bottom">stretch</aspectratio>
@@ -153,7 +153,7 @@
 					</control>
 					<control type="image">
 						<posx>0</posx>
-						<posy>0</posy>
+						<posy>30</posy>
 						<width>350</width>
 						<height>350</height>
 						<aspectratio aligny="bottom">stretch</aspectratio>
@@ -176,7 +176,7 @@
 				</control>
 				<control type="group">
 					<posx>380</posx>
-					<posy>520</posy>
+					<posy>550</posy>
 					<control type="image"> <!-- logo mod -->
 							<posx>570</posx>
 							<posy>40</posy>
@@ -186,7 +186,7 @@
 							<fadetime>200</fadetime>
 							<texture background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist]/logo.png</texture>
 					</control>
-					<!-- <control type="label">
+					<control type="label">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>400</width>
@@ -198,10 +198,10 @@
 						<font>cirrus_20</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-					</control> -->
+					</control>
 					<control type="label">
 						<posx>0</posx>
-						<posy>35</posy>
+						<posy>30</posy>
 						<width>400</width>
 						<height>25</height>
 						<label>$INFO[ListItem.Album]</label>
@@ -209,7 +209,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>cirrus_30</font>
-						<textcolor>grey2</textcolor>
+						<textcolor>accent</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
 					<!-- <control type="label">
@@ -229,10 +229,10 @@
 					</control> -->
 					<control type="label">
 						<posx>0</posx>
-						<posy>120</posy>
+						<posy>60</posy>
 						<width>400</width>
 						<height>25</height>
-						<label fallback="416">[COLOR=accent]$LOCALIZE[515]: [/COLOR]$INFO[listitem.genre]</label>
+						<label fallback="416">$INFO[listitem.Year][COLOR=grey2]  $INFO[listitem.genre][/COLOR]</label>
 						<scroll>true</scroll>
 						<align>left</align>
 						<aligny>top</aligny>
@@ -240,22 +240,39 @@
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<wrapmultiline>false</wrapmultiline>
-						<visible>Container.Content(Albums) + !Container.Content(Artists)</visible>
+						
 					</control>
+          <control type="image">
+            <posx>0</posx>
+            <posy>105</posy>
+            <width>135</width>
+            <height>50</height>
+            <aligny>left</aligny>
+            <aspectratio align="left">keep</aspectratio>
+            <colordiffuse>white</colordiffuse>
+            <texture>$INFO[ListItem.Property(Album_Label),special://skin/extras/flagging/recordlabel/,.png]</texture>
+            <visible>Container.Content(Albums)</visible>
+        </control> 
+        
 					<control type="label">
 						<description>Trackno txt</description>
 						<posx>0</posx>
-						<posy>120</posy>
-						<width>400</width>
+						<posy>90</posy>
+						<width>550</width>
 						<height>25</height>
-						<label>$INFO[listitem.TrackNumber,$LOCALIZE[31310]: ]</label>
+						<label>[COLOR=accent]$INFO[listitem.TrackNumber]: [/COLOR]$INFO[listitem.Title] ($INFO[ListItem.Duration])</label>
 						<align>left</align>
 						<aligny>top</aligny>
 						<font>cirrus_24</font>
 						<textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
 						<visible>!Container.Content(Albums) + !Container.Content(Artists) + !Container.Content(Genres)</visible>
 					</control>
-					<control type="label">
+          
+          
+          
+					<!--
+          <control type="label">
 						<description>Year txt</description>
 						<posx>0</posx>
 						<posy>80</posy>
@@ -267,6 +284,7 @@
 						<font>cirrus_30</font>
 						<textcolor>white</textcolor>
 					</control>
+          --> 
 				</control>
 				 <control type="scrollbar" id="60">
         <posx>10</posx>
