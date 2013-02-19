@@ -137,12 +137,12 @@
                         </control>
                         <control type="label">
                             <posx>0</posx>
-                            <posy>320</posy>
+                            <posy>220</posy>
                             <width>1280</width>
                             <height>380</height>
                             <font>cirrus_40_Bold</font>
                             <textcolor>white</textcolor>
-                            <shadowcolor/>
+                            <shadowcolor>black</shadowcolor>
                             <align>center</align>
                             <aligny>center</aligny>
                             <label>31311</label>
@@ -176,7 +176,7 @@
                             <texture>separator_vertical.png</texture>
                         </control>
                         <control type="image">
-                            <posx>90</posx>
+                            <posx>60</posx>
                             <posy>5</posy>
                             <width>220</width>
                             <height>330</height>
@@ -188,7 +188,7 @@
                         </control>
                         <control type="grouplist">
                             <description>Media Codec Flagging Images</description>
-                            <posx>590</posx>
+                            <posx>470</posx>
                             <posy>320</posy>
                             <width>600</width>
                             <itemgap>10</itemgap>
@@ -302,7 +302,7 @@
                     </control>
                     <!-- LABELS -->
                     <control type="group">
-                        <posx>400</posx>
+                        <posx>300</posx>
                         <posy>-20</posy>
                         <width>820</width>
                         <control type="label">
@@ -347,9 +347,9 @@
                         </control>
                         <control type="label">
                             <description>Path:</description>
-                            <posx>210</posx>
+                            <posx>190</posx>
                             <posy>265</posy>
-                            <width>615</width>
+                            <width>715</width>
                             <height>30</height>
                             <font>cirrus_20</font>
                             <label>$INFO[Listitem.FilenameAndPath]</label>
@@ -383,7 +383,7 @@
                     </control>
                     <!-- year, runtime, director, writer, cast (cast label only) -->
                     <control type="list" id="49">
-                        <posx>320</posx>
+                        <posx>220</posx>
                         <posy>60</posy>
                         <width>600</width>
                         <height>266</height>
@@ -401,7 +401,7 @@
                                 <info>ListItem.Label</info>
                             </control>
                             <control type="label">
-                                <posx>290</posx>
+                                <posx>270</posx>
                                 <posy>0</posy>
                                 <width>565</width>
                                 <height>30</height>
@@ -427,7 +427,7 @@
                                 <info>ListItem.Label</info>
                             </control>
                             <control type="label">
-                                <posx>290</posx>
+                                <posx>270</posx>
                                 <posy>0</posy>
                                 <width>565</width>
                                 <height>80</height>
@@ -496,7 +496,6 @@
                             <posy>545</posy>
                             <width>200</width>
                             <height>77</height>
-
                             <texture>$INFO[ListItem.Art(clearlogo)]</texture>
                             <fadetime>100</fadetime>
                             <aspectratio scalediffuse="false">keep</aspectratio>
@@ -530,7 +529,6 @@
                             <posy>385</posy>
                             <width>405</width>
                             <height>227</height>
-
                             <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
                             <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                             <bordersize>6</bordersize>
@@ -545,7 +543,7 @@
                             <visible>!Skin.HasSetting(Use_Startup_DreamVideo)</visible>
                         </control>
                         <control type="image">
-                            <posx>90</posx>
+                            <posx>60</posx>
                             <posy>5</posy>
                             <width>220</width>
                             <height>330</height>
@@ -577,7 +575,8 @@
                         </control>
                     </control>
                     <control type="group">
-                        <posx>400</posx>
+                        <description>Top info block</description>
+                        <posx>300</posx>
                         <posy>-20</posy>
                         <width>820</width>
                         <control type="label">
@@ -591,7 +590,6 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-
                             <shadowcolor/>
                         </control>
                         <control type="label">
@@ -605,7 +603,6 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>grey2</textcolor>
-
                             <shadowcolor/>
                         </control>
                         <control type="label">
@@ -622,16 +619,15 @@
                         </control>
                         <control type="label">
                             <description>Path:</description>
-                            <posx>210</posx>
+                            <posx>220</posx>
                             <posy>265</posy>
-                            <width>605</width>
+                            <width>635</width>
                             <height>30</height>
                             <font>cirrus_20</font>
                             <label>$INFO[Listitem.FilenameAndPath]</label>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-
                             <shadowcolor/>
                             <scroll>true</scroll>
                             <visible>Skin.HasSetting(pathininfo)</visible>
@@ -657,7 +653,7 @@
                         <!-- Changes End Butchabay MOD 1.2.0 -->
                     </control>
                     <control type="list" id="49">
-                        <posx>320</posx>
+                        <posx>220</posx>
                         <posy>60</posy>
                         <width>800</width>
                         <height>266</height>
@@ -681,7 +677,7 @@
                                 <info>ListItem.Label</info>
                             </control>
                             <control type="label">
-                                <posx>290</posx>
+                                <posx>300</posx>
                                 <posy>0</posy>
                                 <width>750</width>
                                 <height>30</height>
@@ -707,7 +703,7 @@
                                 <info>ListItem.Label</info>
                             </control>
                             <control type="label">
-                                <posx>290</posx>
+                                <posx>300</posx>
                                 <posy>0</posy>
                                 <width>750</width>
                                 <height>30</height>
@@ -776,7 +772,7 @@
                         </control>
                         <control type="grouplist">
                             <description>Media Codec Flagging Images</description>
-                            <posx>590</posx>
+                            <posx>600</posx>
                             <posy>320</posy>
                             <width>600</width>
                             <itemgap>10</itemgap>
@@ -823,11 +819,8 @@
                             <posy>385</posy>
                             <width>405</width>
                             <height>227</height>
-                            <texture background="true">
-
-                            $INFO[ListItem.Art(fanart)]</texture>
-                            <bordertexture border="6">
-                            ContentPanelvertical.png</bordertexture>
+                            <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+                            <bordertexture border="6">ContentPanelvertical.png</bordertexture>
                             <bordersize>6</bordersize>
                             <aspectratio>stretch</aspectratio>
                             <visible>!Player.HasVideo | Skin.HasSetting(Use_Startup_DreamVideo)</visible>
@@ -918,9 +911,9 @@
                         </control>
                         <control type="label">
                             <description>Path:</description>
-                            <posx>210</posx>
+                            <posx>220</posx>
                             <posy>265</posy>
-                            <width>610</width>
+                            <width>615</width>
                             <height>30</height>
                             <font>cirrus_20</font>
                             <label>$INFO[Listitem.FilenameAndPath]</label>
@@ -1004,7 +997,7 @@
                                 <info>ListItem.Label</info>
                             </control>
                             <control type="label">
-                                <posx>290</posx>
+                                <posx>300</posx>
                                 <posy>0</posy>
                                 <width>565</width>
                                 <height>30</height>
@@ -1030,7 +1023,7 @@
                                 <info>ListItem.Label</info>
                             </control>
                             <control type="label">
-                                <posx>290</posx>
+                                <posx>300</posx>
                                 <posy>0</posy>
                                 <width>565</width>
                                 <height>30</height>
@@ -1089,7 +1082,7 @@
                 </control>
                 <!-- Actor thumb -->
                 <control type="group">
-                    <posx>40</posx>
+                    <posx>10</posx>
                     <posy>30</posy>
                     <control type="image">
                         <description>Actor image</description>
@@ -1107,9 +1100,9 @@
                 <!-- CAST PANEL -->
                 <control type="panel" id="50">
                     <visible>!Control.HasFocus(12)</visible>
-                    <posx>620</posx>
+                    <posx>500</posx>
                     <posy>230</posy>
-                    <width>450</width>
+                    <width>600</width>
                     <height>65</height>
                     <onleft>105</onleft>
                     <onright>105</onright>
@@ -1123,7 +1116,7 @@
                         <control type="label">
                             <posx>10</posx>
                             <posy>0</posy>
-                            <width>410</width>
+                            <width>600</width>
                             <height>21</height>
                             <font>cirrus_20</font>
                             <align>left</align>
@@ -1136,7 +1129,7 @@
                         <control type="label">
                             <posx>10</posx>
                             <posy>0</posy>
-                            <width>410</width>
+                            <width>600</width>
                             <height>21</height>
                             <font>cirrus_20_Bold</font>
                             <align>left</align>
@@ -1220,7 +1213,6 @@
                         <include>ButtonVideoInfoCommonValues</include>
                         <label>41286</label>
                         <onclick>Dialog.Close(MovieInformation)</onclick>
-
                         <onclick>XBMC.RunScript(script.metadata.actors,$INFO[Container(50).ListItem.Label])</onclick>
                         <visible>System.HasAddon(script.metadata.actors)</visible>
                     </control>
