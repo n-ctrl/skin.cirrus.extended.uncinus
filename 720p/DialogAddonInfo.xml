@@ -30,10 +30,10 @@
 			<control type="label">
 				<description>header label</description>
 				<posx>280</posx>
-				<posy>30</posy>
+				<posy>40</posy>
 				<width>580</width>
 				<height>30</height>
-				<font>cirrus_40</font>
+				<font>cirrus_30</font>
 				<label>24003</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -73,7 +73,7 @@
 					<label>$INFO[ListItem.Property(Addon.Type),[COLOR=accent]$LOCALIZE[146][/COLOR] ]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>cirrus_20_Bold</font>
+					<font>cirrus_20</font>
 					<textcolor>white</textcolor>
 				</control>
 				<control type="label">
@@ -85,7 +85,7 @@
 					<label>$INFO[ListItem.Property(Addon.Creator),[COLOR=accent]$LOCALIZE[21863]:[/COLOR] ]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>cirrus_20_Bold</font>
+					<font>cirrus_20</font>
 					<textcolor>white</textcolor>
 				</control>
 				<control type="label">
@@ -97,7 +97,7 @@
 					<label>$INFO[ListItem.Property(Addon.Version),[COLOR=accent]$LOCALIZE[24051] [/COLOR] ]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>cirrus_20_Bold</font>
+					<font>cirrus_20</font>
 					<textcolor>white</textcolor>
 				</control>
 				<control type="label">
@@ -109,15 +109,15 @@
 					<label>$LOCALIZE[563]:</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>cirrus_20_Bold</font>
+					<font>cirrus_20</font>
 					<textcolor>accent</textcolor>
 				</control>
 				<control type="image">
 					<description>Rating value</description>
 					<posx>80</posx>
-					<posy>87</posy>
-					<width>160</width>
-					<height>32</height>
+					<posy>90</posy>
+					<width>140</width>
+					<height>26</height>
 					<texture>$INFO[ListItem.Property(Addon.StarRating)]</texture>
 				</control>
 				<control type="label">
@@ -129,7 +129,7 @@
 					<label>$INFO[ListItem.Property(Addon.Summary),[COLOR=accent]$LOCALIZE[20037]: [/COLOR] ]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>cirrus_20_Bold</font>
+					<font>cirrus_20</font>
 					<textcolor>white</textcolor>
 				</control>
 				<control type="image">
@@ -148,7 +148,7 @@
 					<label>$LOCALIZE[21821]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>cirrus_20_Bold</font>
+					<font>cirrus_20</font>
 					<textcolor>accent</textcolor>
 				</control>
 				<control type="group">
@@ -162,7 +162,7 @@
 						<label>$INFO[Container(400).CurrentPage, $LOCALIZE[31024] [COLOR=accent]([/COLOR]]$INFO[Container(400).NumPages,/,[COLOR=accent])[/COLOR]]</label>
 						<align>right</align>
 						<aligny>center</aligny>
-						<font>font12</font>
+						<font>cirrus 14</font>
 						<textcolor>grey</textcolor>
 					</control>
 					<control type="textbox" id="400">
