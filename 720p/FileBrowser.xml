@@ -93,14 +93,16 @@
 						<label>749</label>
 					</control>
 				</control>
-				<control type="image">
+				<!--
+        <control type="image">
 					<posx>245</posx>
 					<posy>460</posy>
 					<width>420</width>
 					<height>210</height>
-					<texture border="5">button-nofocus.png</texture>
+					<texture border="1">button-backNF.png*</texture>
 				</control>
-				<control type="image">
+				-->
+        <control type="image">
 					<posx>230</posx>
 					<posy>458</posy>
 					<width>450</width>
@@ -114,7 +116,7 @@
 					<width>450</width>
 					<height>227</height>
 					<aspectratio>stretch</aspectratio>
-					<texture background="true">border-browserpanel.png</texture>
+					<texture background="true">button-backNF.png</texture>
 				</control>
 				<control type="panel" id="450">
 					<posx>20</posx>

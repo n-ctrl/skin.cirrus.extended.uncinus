@@ -271,7 +271,7 @@
 					<height>45</height>
 					<textoffsetx>20</textoffsetx>
 					<label>24022</label>
-					<font>cirrus_20_Bold</font>
+					<font>cirrus_20</font>
 					<align>center</align>
 					<texturenofocus border="5">button-backNF.png</texturenofocus>
 					<texturefocus border="5">button-backFO.png</texturefocus>
@@ -288,7 +288,7 @@
 					<height>45</height>
 					<textoffsetx>20</textoffsetx>
 					<label>24021</label>
-					<font>cirrus_20_Bold</font>
+					<font>cirrus_20</font>
 					<align>center</align>
 					<texturenofocus border="5">button-backNF.png</texturenofocus>
 					<texturefocus border="5">button-backFO.png</texturefocus>
@@ -305,7 +305,7 @@
 					<height>45</height>
 					<textoffsetx>20</textoffsetx>
 					<label>24020</label>
-					<font>cirrus_20_Bold</font>
+					<font>cirrus_20</font>
 					<align>center</align>
 					<texturenofocus border="5">button-backNF.png</texturenofocus>
 					<texturefocus border="5">button-backFO.png</texturefocus>
@@ -322,7 +322,7 @@
 					<height>45</height>
 					<textoffsetx>20</textoffsetx>
 					<label>24069</label>
-					<font>cirrus_20_Bold</font>
+					<font>cirrus_20</font>
 					<align>center</align>
 					<texturenofocus border="5">button-backNF.png</texturenofocus>
 					<texturefocus border="5">button-backFO.png</texturefocus>
@@ -339,7 +339,7 @@
 					<height>45</height>
 					<textoffsetx>20</textoffsetx>
 					<label>24036</label>
-					<font>cirrus_20_Bold</font>
+					<font>cirrus_20</font>
 					<align>center</align>
 					<texturenofocus border="5">button-backNF.png</texturenofocus>
 					<texturefocus border="5">button-backFO.png</texturefocus>
@@ -356,7 +356,7 @@
 					<height>45</height>
 					<textoffsetx>20</textoffsetx>
 					<label>24048</label>
-					<font>cirrus_20_Bold</font>
+					<font>cirrus_20</font>
 					<align>center</align>
 					<texturenofocus border="5">button-backNF.png</texturenofocus>
 					<texturefocus border="5">button-backFO.png</texturefocus>
