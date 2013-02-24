@@ -1166,6 +1166,42 @@
         <textcolor>white</textcolor>
         <shadowcolor>black</shadowcolor>
     </include>
+    <include name="WeatherDayLabelHome">
+				<posy>0</posy>
+				<width>150</width>
+				<height>30</height>
+        <font>cirrus_24_Bold</font>
+        <textcolor>white</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+    </include>
+    <include name="WeatherTempLabelHome">
+				<posy>70</posy>
+				<width>80</width>
+				<height>25</height>
+        <font>cirrus_20</font>
+        <textcolor>grey</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+    </include>
+    <include name="WeatherTempHome">
+				<posy>90</posy>
+				<width>80</width>
+				<height>25</height>
+        <font>cirrus_20</font>
+        <textcolor>white</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+    </include>    
+    <include name="WeatherConditionHome">
+				<posy>30</posy>
+				<width>200</width>
+				<height>30</height>
+        <font>cirrus_18</font>
+        <textcolor>grey</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>    
+    </include>
     <include name="WeatherSeparator">
         <control type="image">
             <posx>20</posx>
