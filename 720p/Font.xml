@@ -1075,17 +1075,23 @@
 		</font>
 		<font>
 			<name>cirrus_24_Bold</name>
-		    <filename>Ubuntu-L.ttf</filename>
+		  <filename>Ubuntu-L.ttf</filename>
 			<size>24</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>cirrus_30_Bold</name>
-			<filename>Ubuntu-L.ttf</filename>
+			<filename>Ubuntu-M.ttf</filename>
 			<size>30</size>
 			<style>bold</style>
 		</font>
 		<font>
+			<name>cirrus_35_Bold</name>
+			<filename>Ubuntu-L.ttf</filename>
+			<size>35</size>
+			<style>bold</style>
+		</font>
+    <font>
 			<name>cirrus_40_Bold</name>
 			<filename>Ubuntu-L.ttf</filename>
 			<size>40</size>
