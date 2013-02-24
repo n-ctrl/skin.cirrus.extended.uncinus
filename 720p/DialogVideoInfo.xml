@@ -213,9 +213,34 @@
                             <posx>620</posx>
                             <posy>550</posy>
                             <aspectratio>keep</aspectratio>
-                            <align>right</align>
+                            <align>left</align>
+                            <colordiffuse>grey</colordiffuse>
                             <texture>$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
                         </control>
+                        
+                        <control type="image">
+                            <!-- LOGO MOD YoHan -->
+                            <width>300</width>
+                            <height>60</height>
+                            <posx>330</posx>
+                            <posy>550</posy>
+                            <aspectratio>keep</aspectratio>
+                            <align>center</align>
+                            <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
+                        </control>                        
+
+                        <!-- LOGO TOP RIGHT
+                        <control type="image">
+                            <!-- LOGO MOD YoHan 
+                            <width>300</width>
+                            <height>80</height>
+                            <posx>940</posx>
+                            <posy>85</posy>
+                            <aspectratio>keep</aspectratio>
+                            <align>right</align>
+                            <texture background="true" fallback="fallback.p*ng">$INFO[ListItem.Art(clearlogo*)]</texture>
+                        </control> 
+                        -->                                                
                         <control type="image">
                             <description>IMDB rating</description>
                             <posx>1080</posx>
@@ -269,6 +294,7 @@
                             <align>right</align>
                             <aligny>center</aligny>
                             <itemgap>0</itemgap>
+                            <aspectratio>keep</aspectratio>
                             <orientation>horizontal</orientation>
                             <include>VideoMPAAFlaggingConditions</include>
                         </control>
@@ -557,12 +583,24 @@
                             <!-- STUDIO FLAG -->
                             <width>120</width>
                             <height>69</height>
-                            <posx>620</posx>
+                            <posx>15</posx>
                             <posy>550</posy>
                             <aspectratio>keep</aspectratio>
                             <align>right</align>
                             <texture>$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
                         </control>
+                        
+<control type="image">
+    <!-- logo mod -->
+		<posx>900</posx>
+		<posy>100</posy>
+		<width>300</width>
+		<height>80</height>
+		<aspectratio scalediffuse="false" aligny="center" align="right">keep</aspectratio> 
+    <texture background="true" fallback="fallback.png">$INFO[ListItem.Art(clearlogo)]</texture>
+</control>
+
+
                         <control type="image">
                             <!-- STARS -->
                             <description>IMDB rating</description>
@@ -765,7 +803,6 @@
                             <posy>545</posy>
                             <width>200</width>
                             <height>77</height>
-
                             <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
                             <fadetime>100</fadetime>
                             <aspectratio scalediffuse="false">keep</aspectratio>
@@ -920,7 +957,6 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
-
                             <shadowcolor/>
                             <scroll>true</scroll>
                             <visible>Skin.HasSetting(pathininfo)</visible>
@@ -945,8 +981,7 @@
                         </control>
                         <control type="grouplist">
                             <!-- MPAA Rating -->
-                            <description>MPAA Rating Flagging
-                            Images</description>
+                            <description>MPAA Rating Flagging Images</description>
                             <posx>250r</posx>
                             <posy>90</posy>
                             <width>249</width>

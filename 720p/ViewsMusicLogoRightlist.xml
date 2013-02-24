@@ -145,7 +145,9 @@
 				<control type="group">
 					<posx>25</posx>
 					<posy>600</posy>
-					     <control type="image"> <!-- logo mod -->
+
+               <control type="image"> <!-- logo mod -->
+					     <!--
 							<posx>780</posx>
 							<posy>-15</posy>
 							<width>300</width>
@@ -154,6 +156,19 @@
 							<fadetime>200</fadetime>
 							<texture background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist]/logo.png</texture>
 					    </control>
+              -->
+            <description>clearart logo</description>
+							<posx>0</posx>
+							<posy>800</posy>
+							<width>300</width>
+							<height>80</height>
+							<aspectratio scalediffuse="false" aligny="center" align="right">keep</aspectratio> 
+              <aligny>left</aligny>
+              <aspectratio align="left">keep</aspectratio>
+              <colordiffuse>white</colordiffuse>
+              <!--<texture background="true">$INFO[ListItem.Path]/clearart.png</texture>-->
+              <texture background="true">$INFO[Skin.String(Music_Folder_Path)]/clearart.png</texture>
+          </control>               
 					    <control type="textbox">
 		                	<posx>0</posx>
 			                <posy>-20</posy>

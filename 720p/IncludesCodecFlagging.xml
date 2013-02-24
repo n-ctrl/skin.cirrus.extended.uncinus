@@ -110,6 +110,7 @@
 			<width>249</width>
 			<height>57</height>
 			<aspectratio>keep</aspectratio>
+      <colordiffuse>grey</colordiffuse>
 			<texture>special://skin/extras/flagging/ratings/australia_g.png</texture>
 			<visible>substring(listitem.mpaa,Australia:G)</visible>
 		</control>

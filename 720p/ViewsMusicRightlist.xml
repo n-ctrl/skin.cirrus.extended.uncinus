@@ -177,8 +177,9 @@
 				<control type="group">
 					<posx>380</posx>
 					<posy>550</posy>
-					<control type="image"> <!-- logo mod -->
-							<posx>570</posx>
+          <control type="image"> <!-- logo mod -->
+					<!--
+          		<posx>570</posx>
 							<posy>40</posy>
 							<width>300</width>
 							<height>80</height>
@@ -186,6 +187,19 @@
 							<fadetime>200</fadetime>
 							<texture background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist]/logo.png</texture>
 					</control>
+      <control type="image">
+      -->
+        <description>clearart logo</description>
+							<posx>0</posx>
+							<posy>90</posy>
+							<width>300</width>
+							<height>50</height>
+							<aspectratio scalediffuse="false" aligny="center" align="right">keep</aspectratio> 
+        <aligny>left</aligny>
+        <aspectratio align="left">keep</aspectratio>
+        <colordiffuse>white</colordiffuse>
+        <texture background="true">$INFO[ListItem.Path]/clearart.png</texture>
+    </control>               
 					<control type="label">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -240,9 +254,23 @@
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<wrapmultiline>false</wrapmultiline>
-						
+					</control>
+					<control type="label">
+						<description>Trackno txt</description>
+						<posx>0</posx>
+						<posy>90</posy>
+						<width>550</width>
+						<height>25</height>
+						<label>[COLOR=accent][B]$INFO[listitem.TrackNumber]: [/B][/COLOR]$INFO[listitem.Title] ($INFO[ListItem.Duration])</label>
+						<align>left</align>
+						<aligny>top</aligny>
+						<font>cirrus_24</font>
+						<textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+						<visible>!Container.Content(Albums) + !Container.Content(Artists) + !Container.Content(Genres)</visible>
 					</control>
           <control type="image">
+            <description>Record Label</description>
             <posx>0</posx>
             <posy>105</posy>
             <width>135</width>
@@ -252,23 +280,7 @@
             <colordiffuse>white</colordiffuse>
             <texture>$INFO[ListItem.Property(Album_Label),special://skin/extras/flagging/recordlabel/,.png]</texture>
             <visible>Container.Content(Albums)</visible>
-        </control> 
-        
-					<control type="label">
-						<description>Trackno txt</description>
-						<posx>0</posx>
-						<posy>90</posy>
-						<width>550</width>
-						<height>25</height>
-						<label>[COLOR=accent]$INFO[listitem.TrackNumber]: [/COLOR]$INFO[listitem.Title] ($INFO[ListItem.Duration])</label>
-						<align>left</align>
-						<aligny>top</aligny>
-						<font>cirrus_24</font>
-						<textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
-						<visible>!Container.Content(Albums) + !Container.Content(Artists) + !Container.Content(Genres)</visible>
-					</control>
-          
+        </control>           
           
           
 					<!--
