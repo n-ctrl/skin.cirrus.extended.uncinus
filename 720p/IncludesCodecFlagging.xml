@@ -400,40 +400,44 @@
 		<!-- US -->
 		<control type="image">
 			<description>Rated G</description>
-			<width>137</width>
-			<height>31</height>
+			<width>145</width>
+			<height>36</height>
 			<aspectratio>keep</aspectratio>
 			<texture>special://skin/extras/flagging/newratings/mpaa_general.png</texture>
+      <colordiffuse>grey2</colordiffuse>
 			<visible>substring(listitem.mpaa,Rated G)</visible>
 		</control>
 		<control type="image">
 			<description>Rated PG</description>
-			<width>137</width>
-			<height>31</height>
+			<width>145</width>
+			<height>36</height>
 			<aspectratio>keep</aspectratio>
-			<texture>special://skin/extras/flagging/newratings/mpaa_pg.png</texture>
+			<colordiffuse>grey2</colordiffuse>
+      <texture>special://skin/extras/flagging/newratings/mpaa_pg.png</texture>
 			<visible>substring(listitem.mpaa,Rated PG) + !substring(listitem.mpaa,Rated PG-13)</visible>
 		</control>
 		<control type="image">
 			<description>Rated PG-13</description>
-			<width>137</width>
-			<height>31</height>
+			<width>145</width>
+			<height>36</height>
 			<aspectratio>keep</aspectratio>
-			<texture>special://skin/extras/flagging/newratings/mpaa_pg13.png</texture>
+			<colordiffuse>grey2</colordiffuse>
+      <texture>special://skin/extras/flagging/newratings/mpaa_pg13.png</texture>
 			<visible>substring(listitem.mpaa,Rated PG-13)</visible>
 		</control>
 		<control type="image">
 			<description>Rated R</description>
-			<width>137</width>
-			<height>31</height>
+			<width>145</width>
+			<height>36</height>
 			<aspectratio>keep</aspectratio>
-			<texture>special://skin/extras/flagging/newratings/mpaa_restricted.png</texture>
+			<colordiffuse>grey2</colordiffuse>
+      <texture>special://skin/extras/flagging/newratings/mpaa_restricted.png</texture>
 			<visible>substring(Listitem.mpaa,Rated R)</visible>
 		</control>
 		<control type="image">
 			<description>Rated NC-17</description>
-			<width>137</width>
-			<height>31</height>
+			<width>145</width>
+			<height>36</height>
 			<aspectratio>keep</aspectratio>
 			<texture>special://skin/extras/flagging/newratings/mpaa_nc17.png</texture>
 			<visible>substring(Listitem.mpaa,Rated NC)</visible>
@@ -539,10 +543,11 @@
 		<!-- No Rating -->
 		<control type="image">
 			<description>No Rating</description>
-			<width>137</width>
-			<height>31</height>
+			<width>145</width>
+			<height>36</height>
 			<aspectratio>keep</aspectratio>
 			<texture>special://skin/extras/flagging/newratings/mpaa_notrated.png</texture>
+      <colordiffuse>grey2</colordiffuse>
 			<visible>isEmpty(listitem.mpaa)</visible>
 		</control>
 		</include>

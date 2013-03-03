@@ -70,7 +70,7 @@
 		<texture>BlackFanart.png</texture>					
 	</control>
            
-        <control type="group">
+  <control type="group">
 			<posx>-35</posx>
 			<posy>-15</posy>
 			<visible>!Skin.HasSetting(BlackBackground)</visible>
@@ -790,15 +790,6 @@
 				</control>
 			</control>
 			
-			
-			<control type="progress">
-				<description>Progressbar</description>
-				<posx>25</posx>
-				<posy>25r</posy>
-				<width>1235</width>
-				<height>14</height>
-				<info>Player.Progress</info>
-			</control>
 			<control type="group">
 				<posx>370</posx>
 				<posy>155r</posy>
@@ -823,7 +814,7 @@
 						<width>80</width>
 						<height>40</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[MusicPlayer.Codec,flagging/audio/,.png]</texture>
+						<texture>$INFO[musicplayer.Codec,special://skin/extras/flagging/audio/,.png]</texture>
 						<visible>!Skin.HasSetting(newFlags)</visible>
 					</control>
 					<control type="image">
@@ -831,7 +822,7 @@
 						<width>80</width>
 						<height>40</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[MusicPlayer.Codec,flagging/audioNew/,.png]</texture>
+						<texture>$INFO[musicplayer.Codec,special://skin/extras/flagging/audioNew/,.png]</texture>
 						<visible>Skin.HasSetting(newFlags)</visible>
 					</control>
 					
@@ -840,7 +831,7 @@
 						<width>80</width>
 						<height>40</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[MusicPlayer.Channels,flagging/audio/,.png]</texture>
+						<texture>$INFO[MusicPlayer.Channels,special://skin/extras/flagging/audio/,.png]</texture>
 						<visible>!Skin.HasSetting(newFlags)</visible>
 					</control>
 					<control type="image">
@@ -848,7 +839,7 @@
 						<width>80</width>
 						<height>40</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[MusicPlayer.Channels,flagging/audioNew/,.png]</texture>
+						<texture>$INFO[MusicPlayer.Channels,special://skin/extras/flagging/audioNew/,.png]</texture>
 						<visible>Skin.HasSetting(newFlags)</visible>
 					</control>
 					
@@ -869,7 +860,7 @@
 						<width>80</width>
 						<height>40</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[MusicPlayer.Codec,flagging/audio/,.png]</texture>
+						<texture>$INFO[MusicPlayer.Codec,special://skin/extras/flagging/audio/,.png]</texture>
 						<visible>!Skin.HasSetting(newFlags)</visible>
 					</control>
 					<control type="image">
@@ -877,7 +868,7 @@
 						<width>80</width>
 						<height>40</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[MusicPlayer.Codec,flagging/audioNew/,.png]</texture>
+						<texture>$INFO[MusicPlayer.Codec,special://skin/extras/flagging/audioNew/,.png]</texture>
 						<visible>Skin.HasSetting(newFlags)</visible>
 					</control>
 					
@@ -896,7 +887,7 @@
 						<width>80</width>
 						<height>40</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[MusicPlayer.Channels,flagging/audio/,.png]</texture>
+						<texture>$INFO[MusicPlayer.Channels,special://skin/extras/flagging/audio/,.png]</texture>
 						<visible>!Skin.HasSetting(newFlags)</visible>
 					</control>	
 					<control type="image">
@@ -904,12 +895,13 @@
 						<width>80</width>
 						<height>40</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[MusicPlayer.Channels,flagging/audioNew/,.png]</texture>
+						<texture>$INFO[MusicPlayer.Channels,special://skin/extras/flagging/audioNew/,.png]</texture>
 						<visible>Skin.HasSetting(newFlags)</visible>
 					</control>	
 					
 				</control>				
-<!-- Zombie -->							
+<!-- Zombie -->	
+						
 				<control type="label">
 					<description>Now Playing Label</description>
 					<posx>0</posx>
@@ -924,8 +916,8 @@
 					<label>31040</label>
 					<visible>!Skin.HasSetting(cdart) + !Skin.HasSetting(zombie_osd)</visible>
 				</control>
-				<control type="label">
-					<description>Now Playing Label</description> <!-- moves to right if cdart enabled -->
+				<!--<control type="label">
+					<description>Now Playing Label</description> <!-- moves to right if cdart enabled --
 					<posx>100</posx>
 					<posy>0</posy>
 					<width>400</width>
@@ -933,11 +925,12 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>cirrus_20</font>
-					<textcolor>accent</textcolor>
+					<textcolor>red</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<label>31040</label>
 					<visible>Skin.HasSetting(cdart) + !Skin.HasSetting(zombie_osd)</visible>
 				</control>
+        -->
 				<control type="label">
 					<posx>0</posx>
 					<posy>28</posy>
@@ -953,7 +946,7 @@
 				</control>
 				<control type="label">
 					<posx>100</posx>
-					<posy>28</posy>
+					<posy>0</posy>
 					<width>490</width>
 					<height>30</height>
 					<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, - ]</label>
@@ -981,7 +974,7 @@
 				</control>
 				<control type="label">
 					<posx>100</posx>
-					<posy>61</posy>
+					<posy>35</posy>
 					<width>510</width>
 					<height>30</height>
 					<label>$INFO[MusicPlayer.Title]</label>
@@ -990,10 +983,20 @@
 					<aligny>center</aligny>
 					<scroll>true</scroll>
 					<font>cirrus_30</font>
-					<textcolor>white</textcolor>
+					<textcolor>accent</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>Skin.HasSetting(cdart) + !Skin.HasSetting(zombie_osd)</visible>
 				</control>
+			<control type="progress">
+				<description>Progressbar</description>
+				<posx>185</posx>
+				<posy>80</posy>
+				<width>620</width>
+				<height>14</height>
+				<info>Player.Progress</info>
+			</control>        
+        
+        
 <!-- Zombie -->
 				<control type="label">
 					<posx>-35</posx>
@@ -1104,7 +1107,9 @@
 					<shadowcolor>black</shadowcolor>
 					<visible>Skin.HasSetting(zombie_osd)</visible>
 				</control>				
-<!-- Zombie -->								
+<!-- Zombie -->	
+
+							
 				<control type="label">
 					<posx>0</posx>
 					<posy>100</posy>
@@ -1120,7 +1125,7 @@
 				</control>
 				<control type="label">
 					<posx>100</posx>
-					<posy>100</posy>
+					<posy>110</posy>
 					<width>300</width>
 					<height>20</height>
 					<label>$INFO[musicplayer.Playlistposition,[COLOR=accent]$LOCALIZE[554]:[/COLOR] ]$INFO[musicplayer.Playlistlength, / ]</label>
@@ -1133,12 +1138,12 @@
 				</control>
 				<control type="label">
 					<posx>890</posx>
-					<posy>-5</posy>
+					<posy>0</posy>
 					<width>350</width>
 					<height>100</height>
-					<label>$INFO[musicplayer.Codec,Info: ,]$INFO[musicplayer.Bitrate,: ,kbps]$INFO[musicplayer.bitspersample,:,bit]$INFO[musicplayer.Samplerate,: ,kHz]$INFO[musicplayer.Channels,: ,ch]</label>
-<!--				<label>$INFO[musicplayer.Codec,Â· Codec: ,]$INFO[musicplayer.Bitrate,[CR]Â· Bitrate: ,kbps]$INFO[musicplayer.bitspersample,[CR]Â· Bits:,bit]$INFO[musicplayer.Samplerate,[CR]Â· Freq.: ,kHz]$INFO[musicplayer.Channels,[CR]Â· Channels: ]</label> -->
-					<align>right</align>
+				  <!--<label>[UPPERCASE]$INFO[musicplayer.Codec][/UPPERCASE] $INFO[musicplayer.Bitrate,· ,kbps]$INFO[musicplayer.bitspersample, · ,bit] $INFO[musicplayer.Samplerate,[CR] ,kHz] $INFO[musicplayer.Channels,· , $LOCALIZE[19019]]</label>-->
+          <label>$INFO[musicplayer.bitspersample, ,bit] $INFO[musicplayer.Bitrate,· ,kbps] $INFO[musicplayer.Samplerate,· ,kHz]</label>
+        	<align>right</align>
 					<aligny>center</aligny>
 					<font>cirrus_16</font>
 					<textcolor>grey</textcolor>
@@ -1146,21 +1151,34 @@
 					<visible>!Skin.HasSetting(zombie_osd)</visible>
 				</control>
 				<control type="label">
-					<posx>890</posx>
-					<posy>65</posy>
-					<width>370</width>
-					<height>25</height>
-					<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+					<posx>165</posx>
+					<posy>70</posy>
+					<width>80</width>
+					<height>30</height>
+					<info>Player.Time</info>
 					<align>right</align>
 					<aligny>center</aligny>
-					<font>cirrus_30</font>
+					<font>cirrus_26</font>
 					<textcolor>grey</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>!Skin.HasSetting(zombie_osd)</visible>
 				</control>
 				<control type="label">
 					<posx>890</posx>
-					<posy>100</posy>
+					<posy>70</posy>
+					<width>370</width>
+					<height>30</height>
+					<info>Player.Duration</info>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>cirrus_26</font>
+					<textcolor>grey</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>!Skin.HasSetting(zombie_osd)</visible>
+				</control>
+				<control type="label">
+					<posx>890</posx>
+					<posy>110</posy>
 					<width>490</width>
 					<height>20</height>
 					<label>[COLOR=accent]$LOCALIZE[209] :[/COLOR] $INFO[MusicPlayer.offset(1).Artist,, - ]$INFO[MusicPlayer.offset(1).Title]</label>
