@@ -201,7 +201,7 @@
 						<label>$INFO[ListItem.Duration] $LOCALIZE[12391]  -  $INFO[Listitem.Rating]</label>
 						<align>right</align>
 						<aligny>center</aligny>
-						<font>cirrus_18</font>
+						<font>cirrus_18_Bold</font>
 						<textcolor>FF333333</textcolor>
 						<visible>!IsEmpty(ListItem.Duration)</visible>
 						<visible>!ListItem.IsFolder</visible>
@@ -259,6 +259,7 @@
 					</control>					
 				</focusedlayout>
 			</control>
+
 			<!-- RIGHTLIST BOTTOM INFO TV SHOWS LEVEL -->
       <control type="group">  <!-- poster + widethumb + banner update + next aired v1.1 -->
 				<posx>30</posx>
@@ -452,6 +453,7 @@
 					<texture>$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
           <visible>Skin.HasSetting(banner) + !IsEmpty(ListItem.Thumb)</visible> 
 				</control>
+        
 				<!-- TV SHOW LOGO -->
 				<control type="largeimage" id="7914"> 
 					<posx>370r</posx> 
@@ -461,7 +463,7 @@
 					<fadetime>200</fadetime>
           <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture> 
 					<aspectratio scalediffuse="false">keep</aspectratio> 
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+					<!--<visible>!IsEmpty(ListItem.Thumb)</visible>--> 
 				</control>
 				<!-- Banner Mod -->		
 				<control type="image">
@@ -535,9 +537,9 @@
 						<height>360</height>
 						<aspectratio aligny="bottom">stretch</aspectratio>
 						<texture>black-back.png</texture>
-		                <bordertexture border="8">ContentPanelvertical.png</bordertexture>
-		                <bordersize>8</bordersize>
-                    </control>
+            <bordertexture border="8">ContentPanelvertical.png</bordertexture>
+            <bordersize>8</bordersize>
+          </control>
 					<control type="image">
 						<posx>-10</posx>
 						<posy>-230</posy>
@@ -595,7 +597,6 @@
 						<aligny>center</aligny>
 						<font>cirrus_30</font>
 						<textcolor>white</textcolor>
-						
 						<visible>!IsEmpty(ListItem.Thumb)</visible> 
 					</control>
 					<control type="label">
@@ -637,7 +638,6 @@
 						<aligny>center</aligny>
 						<font>cirrus_30</font>
 						<textcolor>white</textcolor>
-						
 						<visible>!IsEmpty(ListItem.Thumb)</visible> 
 					</control>
 					<control type="label">
@@ -673,9 +673,10 @@
           <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
 					<fadetime>200</fadetime> 
 					<aspectratio scalediffuse="false">keep</aspectratio> 
-					<visible>!IsEmpty(ListItem.Thumb)</visible> 
+					<!--<visible>!IsEmpty(ListItem.Thumb)</visible>--> 
 				</control>
 			</control>
+
 			<!-- RIGHTLIST BOTTOM INFO EPISODES LEVEL -->
 			<control type="group">
 				<posx>20</posx>
@@ -742,6 +743,7 @@
 					<include condition="Skin.HasSetting(newFlags)">AudioCodecFlaggingConditionsNew</include>
 					<include condition="Skin.HasSetting(newFlags)">AspectCodecFlaggingConditionsNew</include>
 				</control>
+
 				<!-- TV SHOW LOGO -->
 				<control type="largeimage" id="7916"> 
 					<posx>370r</posx> 
@@ -764,6 +766,7 @@
           <visible>!IsEmpty(ListItem.Thumb)</visible> 
       </control>
 			</control>
+
 			<!-- RIGHLIST BOTTOM INFO MOVIES -->
 			<control type="group">
 				<posx>20</posx>
@@ -794,8 +797,8 @@
 						<bordersize>8</bordersize>
 					</control>
 					<control type="image">
-					<posx>8</posx>
-          <posy>28</posy>
+					<posx>7</posx>
+          <posy>23</posy>
 					<width>91</width>
 					<height>91</height>
 					<aspectratio>keep</aspectratio>
@@ -914,6 +917,7 @@
 						<visible>stringcompare(ListItem.VideoResolution,540)</visible>
 					</control>
 				</control>
+
 				<control type="group">
 					<posx>250</posx>
 					<posy>210</posy>
@@ -1005,7 +1009,7 @@
 						<description>plotoutline</description>
 						<posx>0</posx>
 						<posy>32</posy>
-						<width>850</width>
+						<width>700</width>
 						<height>61</height>
 						<label>$INFO[ListItem.PlotOutline]</label>
 						<align>justify</align>
@@ -1014,7 +1018,24 @@
 						<textcolor>white</textcolor>
 						<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
             <visible>Skin.HasSetting(plotoutline) + [Skin.HasSetting(newMPAAFlags) + !Skin.HasSetting(noMPAAStudioFlags)]</visible>
-					</control>
+					</control>      
+
+        <!-- MOVIE LOGO -->
+				<control type="largeimage" id="7914"> 
+					<posx>300r</posx> 
+					<posy>0</posy> 
+					<width>250</width> 
+					<height>100</height> 
+					<aligny>center</aligny>
+          <fadetime>200</fadetime>
+          <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture> 
+					<aspectratio scalediffuse="false">keep</aspectratio> 
+					<!--<visible>!IsEmpty(ListItem.Thumb)</visible>-->
+          <visible>Container.Content(movies)</visible>
+          <visible>Skin.HasSetting(plotoutline) + [Skin.HasSetting(newMPAAFlags) + !Skin.HasSetting(noMPAAStudioFlags)]</visible> 
+				</control>   
+
+          
 					<control type="label">
 						<description>Year Label</description>
 						<posx>0</posx>
@@ -1265,15 +1286,14 @@
 					<texture diffuse="maskflags.png">$INFO[listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
 				</control>
 				<control type="image">
-					<posx>680</posx>
+					<posx>360</posx>
 					<posy>41r</posy>
 					<width>70</width>
 					<height>31</height>
 					<aspectratio>keep</aspectratio>
 					<fadetime>FanartCrossfadeTime</fadetime>
 					<texture>Overlayicons/trailer.png</texture>
-
-                    <visible>[!IsEmpty(ListItem.Trailer) | Skin.HasSetting(trailerflag)] + [Skin.HasSetting(showCases) | Skin.HasSetting(showClearCases) | Skin.HasSetting(posterlessRightList)]</visible>
+          <visible>[!IsEmpty(ListItem.Trailer) | Skin.HasSetting(trailerflag)] + [Skin.HasSetting(showCases) | Skin.HasSetting(showClearCases) | Skin.HasSetting(posterlessRightList)]</visible>
 				</control>
 				<control type="grouplist">
 					<description>MPAA Rating Flagging Images</description>
@@ -1285,21 +1305,20 @@
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
 					<include>VideoMPAAFlaggingConditions</include>
-
-                    <visible>!Skin.HasSetting(noMPAAStudioFlags) + !Skin.HasSetting(NewMPAAFlags) + !ListItem.IsFolder</visible>
+          <visible>!Skin.HasSetting(noMPAAStudioFlags) + !Skin.HasSetting(NewMPAAFlags) + !ListItem.IsFolder</visible>
 				</control>
 				<control type="grouplist">
 					<description>MPAA NEW Rating Flagging Images</description>
-					<posx>260r</posx>
-					<posy>270</posy>
+					<posx>685r</posx>
+					<posy>316</posy>
 					<width>249</width>
 					<height>57</height>
 					<align>right</align>
 					<itemgap>0</itemgap>
+          <colordiffuse>grey2</colordiffuse>
 					<orientation>horizontal</orientation>
 					<include>NewVideoMPAAFlaggingConditions</include>
-
-                    <visible>!Skin.HasSetting(noMPAAStudioFlags) + Skin.HasSetting(NewMPAAFlags) + !ListItem.IsFolder</visible>
+          <visible>!Skin.HasSetting(noMPAAStudioFlags) + Skin.HasSetting(NewMPAAFlags) + !ListItem.IsFolder</visible>
 				</control>
 				<control type="grouplist">
 					<description>Media Codec Flagging Images</description>
