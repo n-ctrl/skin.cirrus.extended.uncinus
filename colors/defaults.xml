@@ -5,7 +5,8 @@
 	<color name="grey3">33FFFFFF</color>
 	<color name="black">FF000000</color>
 	<color name="blue">FF006699</color>
-	<color name="accent">FF0077C6</color>
-	<color name="selected">FF7993B0</color>
+	<!--<color name="accent">FF0077C6</color>-->
+  <color name="accent">FF5088a9</color>
+  <color name="selected">FF7993B0</color>
 	<color name="dialogheader">DDced8da</color>
 </colors>
