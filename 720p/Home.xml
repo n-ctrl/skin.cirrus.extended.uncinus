@@ -300,7 +300,7 @@
 			</control>
 			<control type="label">
 				<description>Day label Current</description>
-				<posx>50</posx>
+				<posx>25</posx>
 				<include>WeatherDayLabelHome</include>
 				<label>[UPPERCASE]$LOCALIZE[33006][/UPPERCASE]</label>
 			</control>
@@ -324,7 +324,7 @@
 			</control>
 			 <control type="label">
 				<description>Day label 0</description>
-				<posx>305</posx>
+				<posx>280</posx>
 				<include>WeatherDayLabelHome</include>
 				<label>[UPPERCASE]$INFO[Window(weather).Property(Day0.Title)][/UPPERCASE]</label>
 			</control>
@@ -360,7 +360,7 @@
 			</control>
 			<control type="label">
 				<description>Day 1 label</description>
-				<posx>565</posx>
+				<posx>540</posx>
 				<include>WeatherDayLabelHome</include>
 				<label>[UPPERCASE]$INFO[Window(weather).Property(Day1.Title)][/UPPERCASE]</label>
 			</control>
@@ -396,7 +396,7 @@
 			</control>
 			<control type="label">
 				<description>Day 2 label</description>
-				<posx>820</posx>
+				<posx>795</posx>
 				<include>WeatherDayLabelHome</include>
 				<label>[UPPERCASE]$INFO[Window(weather).Property(Day2.Title)][/UPPERCASE]</label>
 			</control>
@@ -432,7 +432,7 @@
 			</control>
 			<control type="label">
 				<description>Day 3 label</description>
-				<posx>1080</posx>
+				<posx>1055</posx>
 				<include>WeatherDayLabelHome</include>
 				<label>[UPPERCASE]$INFO[Window(weather).Property(Day3.Title)][/UPPERCASE]</label>
 			</control>
