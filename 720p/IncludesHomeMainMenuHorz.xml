@@ -58,16 +58,6 @@
 		  <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu)</visible>
 		  <visible>!Container(9000).HasFocus(24)</visible>
 		  </control> 
-		  <!--  <control type="videowindow" id="8">
-		  <posx>905</posx>
-		  <posy>95</posy>
-		  <width>370</width>
-		  <height>211</height>
-		  <align>center</align>
-		  <visible>Skin.Hassetting(videowindowonhome)</visible>
-		  <visible>Skin.HasSetting(horzHomeMenu) + !Skin.HasSetting(horzLowHomeMenu)</visible>
-		  <visible>Container(9000).HasFocus(24)</visible>
-		  </control>  -->
 		  <control type="group">
 				<visible>!Skin.HasSetting(ExtendedNowPlaying)</visible>
 				<visible>Skin.HasSetting(cdartonhome)</visible>
@@ -220,16 +210,6 @@
 		  <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu)</visible>
 		  <visible>!Container(9000).HasFocus(24)</visible>
 		  </control> 
-		  <!--  <control type="videowindow" id="8">
-		  <posx>895</posx>
-		  <posy>95</posy>
-		  <width>380</width>
-		  <height>211</height>
-		  <align>center</align>
-		  <visible>Skin.Hassetting(videowindowonhome)</visible>
-		  <visible>Skin.HasSetting(horzHomeMenu) + Skin.HasSetting(horzLowHomeMenu)</visible>
-		  <visible>Container(9000).HasFocus(24)</visible>
-		  </control> -->
 		   <control type="group">
 				<visible>!Skin.HasSetting(ExtendedNowPlaying)</visible>
 				<visible>Skin.HasSetting(cdartonhome)</visible>
@@ -494,7 +474,7 @@
 					<icon>special://skin/backgrounds/hdmovies.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_HDMovies_Folder)]</thumb>
 					<onclick>XBMC.ActivateWindow(videos,special://skin/playlists/HDMovies.xsp,return)</onclick>
-					<visible>!Skin.HasSetting(HomeMenuNoHDMoviesButton)</visible>
+					<visible>!Skin.HasSetting(HomeMenuNoHDMoviesButton) + Library.HasContent(Movies)</visible>
 				</item>
 			<item id="7">
 					<description>TV Series</description>
@@ -506,7 +486,7 @@
 				</item>	
 				<item id="28">
 					<label>31187</label>
-				    <onclick>RunScript(script.tv.show.next.aired)</onclick>
+				  <onclick>XBMC.RunScript(script.tv.show.next.aired)</onclick>
 					<icon>special://skin/backgrounds/tv_guide.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_TVGuide_Folder)]</thumb>
 					<visible>!Skin.HasSetting(HomeMenuNoTVGuideButton) + Library.HasContent(TVShows) + System.HasAddon(script.tv.show.next.aired)</visible>
@@ -546,7 +526,7 @@
 			<item id="12">
 					<label>3</label>
 					<onclick>ActivateWindow(Videos,Root)</onclick>
-					<icon>special://skin/backgrounds/videos.jpg</icon>
+					<icon>special://skin/backgrounds/videosfanart.jpg</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
 					<visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
 				</item>
