@@ -371,7 +371,7 @@ msgstr "[B]ADD-ONS CONFIGUREREN[/B][CR][CR]Beheer uw geïnstalleerde add-ons · 
 
 msgctxt "#31409"
 msgid "[B]CONFIGURE TV SETTINGS[/B][CR][CR]Change fullscreen info · Manage EPG data settings"
-msgstr "[[B]CONFIGUREER TV INSTELLINGEN[/B][CR][CR]Verander volledig scherm info  · Beheer EPG data instellingen"
+msgstr "[B]CONFIGUREER TV INSTELLINGEN[/B][CR][CR]Verander volledig scherm info  · Beheer EPG data instellingen"
 
 msgctxt "#31421"
 msgid "Select your XBMC user Profile to login and continue"
