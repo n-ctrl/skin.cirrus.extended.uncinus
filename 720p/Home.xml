@@ -1093,9 +1093,9 @@
 
 			<control type="grouplist">
 				<description>Time & date label top right</description>
-        <posx>260r</posx>
+        <posx>320r</posx>
 				<posy>0</posy>
-				<width>250</width>
+				<width>300</width>
 				<height>40</height>
 				<orientation>horizontal</orientation>
 				<align>right</align>
@@ -1133,7 +1133,7 @@
 
   		<control type="label">
   			<description>time label</description>
-        <width min="0" max="100">auto</width>
+        <width min="0" max="220">auto</width>
     		<aligny>top</aligny>
   			<font>cirrus_35_Bold</font>
   			<textcolor>white</textcolor>

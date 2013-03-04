@@ -190,7 +190,7 @@
       <control type="image">
       -->
         <description>clearart logo</description>
-							<posx>0</posx>
+							<posx>400</posx>
 							<posy>90</posy>
 							<width>300</width>
 							<height>50</height>
@@ -199,7 +199,7 @@
         <aspectratio align="left">keep</aspectratio>
         <colordiffuse>white</colordiffuse>
         <texture background="true">$INFO[ListItem.Path]/clearart.png</texture>
-    </control>               
+    </control>
 					<control type="label">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -281,7 +281,36 @@
             <texture>$INFO[ListItem.Property(Album_Label),special://skin/extras/flagging/recordlabel/,.png]</texture>
             <visible>Container.Content(Albums)</visible>
         </control>           
-          
+
+          <!-- TEST -->          
+          <control type="image"> <!-- logo mod -->
+              <description>clearart logo</description>
+							<posx>400</posx>
+							<posy>90</posy>
+							<width>300</width>
+							<height>50</height>
+							<aspectratio scalediffuse="false" aligny="center" align="right">keep</aspectratio> 
+              <aligny>left</aligny>
+              <aspectratio align="left">keep</aspectratio>
+              <colordiffuse>white</colordiffuse>
+              <texture background="true">$INFO[ListItem.PathAndFilename]/clearart.png</texture>
+              <visible>Container.Content(Albums)</visible>
+          </control>
+
+					<control type="label">
+						<posx>400</posx>
+						<posy>0</posy>
+						<width>400</width>
+						<height>25</height>
+						<label>$INFO[ListItem.PathAndFilename]</label>
+						<scroll>true</scroll>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>cirrus_20</font>
+						<textcolor>red</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>    
+<!-- TEST -->  
           
 					<!--
           <control type="label">
@@ -299,20 +328,20 @@
           --> 
 				</control>
 				 <control type="scrollbar" id="60">
-        <posx>10</posx>
-        <posy>100</posy>
-        <width>25</width>
-        <height>220</height>
-        <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-        <textureslidernib>ScrollBarV.png</textureslidernib>
-        <textureslidernibfocus>ScrollBarV_bar_focus.png</textureslidernibfocus>
-        <onleft>2</onleft>
-        <onright>566</onright>
-        <showonepage>false</showonepage>
-        <orientation>vertical</orientation>
-        <visible>Control.IsVisible(566)</visible>
-		<visible allowhiddenfocus="true">Control.IsVisible(566) + Control.HasFocus(60)</visible>
-      </control>
+            <posx>10</posx>
+            <posy>100</posy>
+            <width>25</width>
+            <height>220</height>
+            <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+            <textureslidernib>ScrollBarV.png</textureslidernib>
+            <textureslidernibfocus>ScrollBarV_bar_focus.png</textureslidernibfocus>
+            <onleft>2</onleft>
+            <onright>566</onright>
+            <showonepage>false</showonepage>
+            <orientation>vertical</orientation>
+            <visible>Control.IsVisible(566)</visible>
+    		    <visible allowhiddenfocus="true">Control.IsVisible(566) + Control.HasFocus(60)</visible>
+        </control>
 			</control>
 		</control>
 	</include>
